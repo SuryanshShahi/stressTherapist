@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="Images/titleLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<style>
+    .btn-transparent:hover {
+        background-color: white !important;
+        color: #1d9390 !important;
+    }
+
+    form .btn-transparent:hover {
+        background-color: #1d9390 !important;
+        color: white !important;
+    }
+
+    .scrollbarWidth::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    .tag {
+        background-color: #1d9390;
+        color: #17a2b8;
+        transition: all 400ms ease !important;
+    }
+
+    .tag:hover {
+        transition: 0.5s !important;
+        color: white !important;
+        /* transform-style: preserve-3d; 
+        transform: translate3d(0.001em,0.001em,0); */
+        background-color: #1d9390;
+    }
+</style>
+
+<body>
+    <section class="">
+        <nav class="" style="border-bottom: 1px solid black;">
+            <div class="container-lg container-fluid">
+                <div class="row my-2" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 d-flex align-items-center px-3"
+                        style="border-right: 1px solid #fff;">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a to="/" class="text-decoration-none px-2 active" style="color: grey;">
+                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                AM-8:00 PM</span>
+                        </a>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 d-flex align-items-center px-3">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a to="/" class="text-decoration-none px-2" style="color: grey;">
+                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                        </a>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 d-flex align-items-center px-3">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a to="/" class="text-decoration-none px-2" style="color: grey;">
+                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
+                                835
+                                0536</span>
+                        </a>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 align-items-center d-flex">
+                        <div class="d-flex list-unstyled">
+                            <div class="">
+                                <a to="/" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a to="/" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a to="/" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a to="/" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
+
+                            <div class="">
+                                <a to="/" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a to="/" class="navbar-brand" href="#">
+                    <img src="./Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="fa fa-bars fa-lg"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" style="margin-left: auto;">
+                        <li class="active nav-item pl-3">
+                            <a to="/" exact class="nav-link"
+                                style="color: #444;font-weight:bold;font-family:'Times New Roman', Times, serif">
+                                ABOUT DR. IMRAN RASID
+                            </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a to="/about" class="nav-link"
+                                style="color: #444;font-weight:bold;font-family:'Times New Roman', Times, serif">
+                                FIND A THERAPIST
+                            </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a to="/project" class="nav-link"
+                                style="color: #444;font-weight:bold;font-family:'Times New Roman', Times, serif">
+                                SERVICES
+                            </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a to="/blog" class="nav-link"
+                                style="color: #444;font-weight:bold;font-family:'Times New Roman', Times, serif">
+                                TESTIMONIALS
+                            </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a to="/services" class="nav-link"
+                                style="color: #444;font-weight:bold;font-family:'Times New Roman', Times, serif">
+                                BLOG
+                            </a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a to="/contact" class="nav-link"
+                                style="color: #444;font-weight:bold;font-family:'Times New Roman', Times, serif">
+                                CONTACT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./slides_1.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                    <div class="carousel-caption">
+                        <p style="font-size: 22px;">Advancing online Video Conferencing therapy to benefit the community
+                            and better humans lives.
+                        </p>
+                        <p style="font-size: 18px;">Stress Reduction Clinic Offers Online & Phone Counselling for
+                            Relationships, Breakups,
+                            Marriage, Work Stress, Depression, etc. You can speak to Dr. Imran anytime of the day for
+                            Counseling, Assessment, and Consultation.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./slides_2.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                    <div class="carousel-caption">
+                        <p style="font-size: 22px;">Change your life in a positive way from today and forever. Call Dr.
+                            Imran and get Tele
+                            therapist in NJ for all your stress and depression-related problems.</p>
+                        <p style="font-size: 18px;">With his professional experience lasting for more than 25 years, Dr.
+                            Imran Rasid is the right
+                            call for patients suffering from Stress, Pain, Fear/Phobias, Addictions or any other anxiety
+                            disorders</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./slides_3.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                    <div class="carousel-caption">
+                        <p style="font-size: 22px;">Discover your brainpower for living a successful life. Don’t take
+                            stress that cause mental
+                            health. Call now to get Online telehealth therapy in NJ for Covid-19</p>
+                        <p style="font-size: 18px;">Dr. Imran Rasid is the right call for patients suffering from
+                            Stress, Pain, Fear/Phobias,
+                            Addictions or any other anxiety disorders. Counseling by Online Chat, Video or Phone
+                            Available Anytime, Anywhere. Get the Help You Need Now with one of the best therapists in
+                            Paramus.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Dr-Imran-1.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                    <div class="carousel-caption">
+                        <p style="font-size: 18px;" class="text-dark">Eliminate your uncomfortable feelings and
+                            discomfort right away with Dr. Imran Rasid.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Dr-Imran2-2.webp" class="d-block w-100" style="height: 100vh;" alt="...">
+                    <div class="carousel-caption">
+                        <p style="font-size: 18px;" class="text-dark">Enjoy the beauty of the session by relaxing
+                            mentally and physically, you will feel amazing
+                            and powerful.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section>
+        <div class="row gx-0">
+            <div class="col-lg-6 col-md-6 col-12 gx-0 align-items-center d-flex">
+                <div class="w-100">
+                    <div class="p-5">
+                        <iframe style="width: 100%;" height="350" src="https://www.youtube.com/embed/kaiIxFfOVls"
+                            title="Best therapist in NJ | Stress Reduction Clinic | Dr. Imran Rasid" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="btn btn-primary mx-5 rounded-0 shadow-lg mb-4 border-0 py-3 px-5"
+                        style="background-color: #1d9390;font-weight: 500;margin-right: auto;">Call Now for Tele Therepy
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 text-white p-5 align-items-center d-flex"
+                style="background-color: rgba(153, 195, 189, 1); font-size: 18px;">
+                <div style="text-align: justify;">
+                    <div>Now Video & Tele Therapy is Available</div>
+                    <hr class="p-0 my-2 m-0" style="height: 2px; width:70px; background-color:white" />
+                    <div style="font-size:22px">COVID-19 Stress & Anxiety Management Program</div>
+                    <div class="mt-2">Why wait when you can get a solution in your home without visiting anywhere.
+                        Stress
+                        Reduction
+                        Clinic is now offering COVID-19 Stress & anxiety online Therapy program to all. Talk with Dr.
+                        Imran
+                        Rasid for any issues like Stress, Anxiety, Depression, fears, phobia, addiction.
+                        <br>
+                        Get Online
+                        Video
+                        & Tele-Therapy in Paramus NJ.
+                    </div>
+                    <div class="btn btn-primary rounded-0 shadow-lg my-3 border-0 py-3 px-5"
+                        style="background-color: #1d9390;font-weight: 500;">Want Video or Telehealth Therapy? Call Now
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 gx-0">
+                <img src="./DSC_0029.webp" class="img-fluid" style="width: 100%;height:100%;" />
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-5 text-white align-items-center d-flex"
+                style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
+                <div>
+                    <div style="text-align: justify;">
+                        <div>The name behind successful results</div>
+                        <hr class="p-0 my-2 m-0" style="height: 2px; width:70px; background-color:white" />
+                        <div style="font-size: 22px;">Dr. Imran Rasid</div>
+                        <p class="mt-2">Dr. Imran Rasid is a Masters Practitioner in NLP (Neuro-Linguistic Programming)
+                            and
+                            a Ph.D. He is
+                            MD
+                            who is practicing different tools and modalities of therapy in NJ. He is also certified as a
+                            counselor, Addiction Counselor, and therapist. He is an American and Canadian
+                            board-certified
+                            therapist.<br>Everybody challenges the sign and symptoms of Stress, Pain or both, almost
+                            every
+                            day.
+                            But unfortunately, they do not take care of it as they should, and therefore, they suffer a
+                            lot.<br>Dr. Imran cares about how people are treated, how they live and how they are treated
+                            when
+                            they seek help.<br>No doubt the therapy can address and resolve a broad spectrum of
+                            concerns,
+                            issues, and symptoms.<br>It can help people to increase many positive qualities, such as</p>
+                        <li>Joy</li>
+                        <li>Compassion</li>
+                        <li>Peace</li>
+                        <li>Self-esteem</li>
+                        <li>Spiritual connection</li>
+                        <li>Love</li>
+                        <li class="mb-3">Joy</li>
+                        Dr. Rasid is one of the leading physicians of the world, who is also an expert in therapy. He is
+                        trained
+                        in Europe, Canada & USA.
+                    </div>
+                    <div class="btn btn-transparent bg-transparent shadow-lg rounded-0 px-5 py-2 mt-3 mb-5"
+                        style="transition:0.5s;border: 2px solid white;color: white;font-weight: 500;">Tele Therapy: 201
+                        835 0536</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gx-0">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 gx-0 text-white position-relative">
+                <div class="justify-content-center d-flex">
+                    <div class="justify-content-center align-items-center d-flex position-absolute tag" style="
+                        border-radius: 50%;
+                        top:-39px;
+                        width: fit-content;
+                        padding: 40px;
+                        z-index: 1;
+                        box-shadow: 0px 0px 2px 1px #636161c9;
+                      ">
+                        <div class="fa fa-bullhorn text-white fa-3x position-absolute"></div>
+                    </div>
+                </div>
+                <div class="position-relative px-5 pb-5 scrollbarWidth" style="
+                    height: 90vh;
+                    overflow-y: scroll;
+                      background-color: rgba(125, 193, 187, 1);
+                      box-shadow: 0px 0px 3px 2px #80808047;
+                    ">
+                    <div class="pt-5" style="font-size: 14px;font-weight: 400;">
+                        <div style="font-size: 18px;"> Therapy for Stress Management</div>
+                        <div style="text-align:justify" class="pt-3">Are you searching <a
+                                href="https://stresstherapistnj.com/stress-and-anxiety-management/"
+                                class="text-white text-decoration-none" style="font-weight: bolder;">therapist for
+                                Stress Management</a>
+                            <span style="text-align:justify">in NJ? Latest medical research shows that 75% to 90% of
+                                all clinical visits are for
+                                illness induced by stress. It is a fact that our persistent thoughts spring forth
+                                from
+                                our unconscious mind. These are the thoughts that we find ourselves automatically
+                                tangled in, in our daily life. If the persistent thoughts that keep popping into our
+                                conscious mind are all about problems, then we definitely increase our stress and
+                                anxiety. Since therapy is a tool that can be used to change unconscious thoughts and
+                                take control over the sub-conscious mind, the right stress relief treatment can
+                                effectively eliminate negative stresses from our system and bring us into a state of
+                                deep relaxation. Medication, Stress management sessions, Counseling services etc
+                                methods
+                                will help to reduce the depression. The beauty here is that the same procedure
+                                working
+                                for stress management also works perfectly to eliminate depression and
+                                anxiety.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 gx-0 text-white position-relative">
+                <div class="justify-content-center d-flex">
+                    <div class="justify-content-center align-items-center d-flex position-absolute tag" style="
+                        border-radius: 50%;
+                        top:-39px;
+                        width: fit-content;
+                        padding: 40px;
+                        z-index: 1;
+                        box-shadow: 0px 0px 2px 1px #636161c9;
+                      ">
+                        <div class="fa fa-eye text-white position-absolute" style="font-size: 2.7rem;"></div>
+                    </div>
+                </div>
+                <div class="position-relative px-5 pb-5 scrollbarWidth" style="
+                    height: 90vh;
+                    overflow-y: scroll;
+                      background-color:#1d9390;
+                      box-shadow: 0px 0px 3px 2px #80808047;
+                    ">
+                    <div class="pt-5" style="font-size: 14px;font-weight: 400;">
+                        <div style="font-size: 18px;"> Therapy for Pain Management</div>
+                        <div style="text-align:justify">
+                            <p style="text-align:justify" class="pt-3">Stress and pain are intimately related to
+                                each other in
+                                the sense that pain can cause stress and stress can worsen the pain. Therapy for
+                                pain plays a key role in eliminating this cycle. For pain therapists, these
+                                treatments like focusing on the relationship between mind and body, are considered
+                                mainstream. For other health professionals, they may be considered alternative or
+                                complementary therapies. Regardless of how they are labeled, there is evidence that
+                                they work for many people.
+
+                                During the therapy trance, the conscious level of the brain is turned off for some
+                                time as the client focuses on relaxation and let go of distracting thoughts. Dr.
+                                Rasid is one of the best therapist who also helps you to reduce pain with the help
+                                of Psychology. The American society of clinical psychologists equates therapy to
+                                using a magnifying glass to focus the sun rays in order to enhance them and become
+                                more powerful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 gx-0 text-white position-relative">
+                <div class="justify-content-center d-flex">
+                    <div class="justify-content-center align-items-center d-flex position-absolute tag" style="
+                        border-radius: 50%;
+                        top:-39px;
+                        width: fit-content;
+                        padding: 40px;
+                        z-index: 1;
+                        box-shadow: 0px 0px 2px 1px #636161c9;
+                      ">
+                        <div class="fa fa-gear text-white fa-3x position-absolute"></div>
+                    </div>
+                </div>
+                <div class="position-relative px-5 pb-5 scrollbarWidth" style="
+                    height: 90vh;
+                    overflow-y: scroll;
+                      background-color: rgba(125, 193, 187, 1);
+                      box-shadow: 0px 0px 3px 2px #80808047;
+                    ">
+                    <div class="pt-5" style="font-size: 14px;font-weight: 400;">
+                        <div style="font-size: 18px;"> Therapy for Fears & Phobias</div>
+                        <div style="text-align:justify">
+                            <p style="text-align:justify" class="pt-3">Therapy for fear and Phobias – Deriving from
+                                Greek, the
+                                word Phobia meaning ‘Fear’, refers to a number of conditions. Sometimes fear or
+                                phobias can become more serious if they are not treated properly and can traumatize
+                                someone in a serious way. No matter what fear or phobia one suffers from, it is
+                                important to point out that it is not a mental illness. Therapy for fear helps you
+                                to overcome this type of problem. Therefore, it feels good to know that one can
+                                easily overcome fear and phobias with therapy. NLP and therapist promise extremely
+                                effective results for the kind of problems listed below :
+                            </p>
+                            <ul>
+                                <li>Lose or gain weight.</li>
+                                <li>Break drug addictions & quit smoking</li>
+                                <li>Feeling anxious.</li>
+                                <li>Overcome anxiety, stress, and pain</li>
+                                <li>Social phobia</li>
+                                <li>Feeling dizzy</li>
+                                <li>Racing or pounding heart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 gx-0 text-white position-relative">
+                <div class="justify-content-center d-flex">
+                    <div class="justify-content-center align-items-center d-flex position-absolute tag" style="
+                        border-radius: 50%;
+                        width: fit-content;
+                        padding: 40px;
+                        top: -39px;
+                        z-index: 1;
+                        box-shadow: 0px 0px 2px 1px #636161c9;
+                      ">
+                        <div class="fa fa-sun-o text-white fa-3x position-absolute"></div>
+                    </div>
+                </div>
+                <div class="position-relative px-5 pb-5 scrollbarWidth" style="
+                    height: 90vh;
+                    overflow-y: scroll;
+                      background-color: #1d9390;
+                      box-shadow: 0px 0px 3px 2px #80808047;
+                    ">
+                    <div class="pt-5" style="font-size: 14px;font-weight: 400;">
+                        <div style="font-size: 18px;">Therapy for Weight Loss</div>
+                        <div style="text-align:justify">
+                            <p style="text-align:justify" class="pt-3">Do you want to start therapy for weight loss?
+                                Overcoming
+                                the craving for sugar and fat are not easy. The National Institute of Health (NIH)
+                                has documented studies supporting the connection between opiate use and the
+                                development of a preference for sweet tastes. The dopamine that is released when you
+                                eat sugar is the same reaction that someone gets when they use heroin. So, if you
+                                are struggling to stop eating sugary foods by willpower alone, know that the reason
+                                it is so difficult is that your brain is addicted to them. Your brain can help you
+                                to get rid of weight loss and craving for sweets. People are constantly looking for
+                                ‘quick fixes’ to cut sugar craving. Even people are using weight loss medicines
+                                which can affect your energy and health so try to avoid using them. Therapy for
+                                addiction weight loss is increasingly accepted all over the world. Therapy may be
+                                the best treatment. At StressTherapistNJ, Dr. Imran Rasid, and his team has helped
+                                many people to reduce weight and they have got good results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin:0;height:1.5px;color: white;">
+
+        <div class="row text-white position-relative gx-0" style="font-size: 20px;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 align-items-center d-flex justify-content-center p-5"
+                style="background-color:#1d9390;">
+                About Online Telephone Therapy
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 align-items-center d-flex justify-content-center p-5"
+                style="background-color:rgba(153, 195, 189, 1);">
+                Tele Therapist in NJ, in general, have different approaches to the treatment of phobias, pain
+                control, stress management, etc. Therefore, it is extremely important for you to meet the therapist
+                you have chosen in person so that you feel comfortable and confident regarding their approach,
+                academic qualification, and medical background.
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 align-items-center d-flex justify-content-center p-5"
+                style="background-color:rgba(153, 195, 189, 1);">
+                <div> What Therapy Can Do
+                    <ol class="pt-3">
+                        <li>It can improve your health.</li>
+                        <li>It enhances your body to function in a healthy and efficient way.</li>
+                        <li>It eliminates stress, anxiety and depression.</li>
+                        <li>It makes you quit smoking or limit your unwanted weight.</li>
+                        <li>It eliminates or decreases the intensity of the pain.</li>
+                        <li>It improves memory and concentration.</li>
+                        <li>It removes fear and phobias.</li>
+                        <li>It boosts motivation.</li>
+                        <li>It relaxes your body.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 align-items-center d-flex justify-content-center p-5"
+                style="background-color:#1d9390;">
+                <div>
+                    What Therapy Can NOT Do
+                    <ol class="pt-3">
+                        <li>It will not make you tell secrets that you don’t want to share with anyone.</li>
+                        <li>It will never make you do the things against your will.</li>
+                        <li>Therapy cannot make you lose control over yourself.</li>
+                        <li>It will not delete your memory.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white py-5" style="background-color:#1d9390 ;">
+            <div class="text-center" style="font-size: 22px;">Latest Therapy Blogs</div>
+            <hr class="mx-auto" style="height: 2px;color:white;width: 70px;">
+            <div class="row gx-0 m-3">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center p-3 position-relative">
+                    <div class="fa fa-plus align-items-center d-flex justify-content-center position-absolute"
+                        style="background-color:#ffffffa6;height: 45px;width:45px;border-radius:50px;right: 50px;top: -8px;">
+                    </div>
+                    <div class="p-2 pt-4"
+                        style="background-color:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+                        <a href="" target="_blank" class="text-white text-decoration-none" style="font-size: 22px;">10
+                            SURPRISING FACTS ABOUT ANXIETY</a>
+                    </div>
+                    <div class="p-3 scrollbarWidth"
+                        style="background-color:rgba(255,255,255,.075);height:240px;overflow-y:scroll;border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+
+                        <div class="" style="text-align: justify;">Your body’s natural reaction to stress is anxiety. It
+                            is a
+                            sensation
+                            of dread or trepidation about
+                            what is ahead. The majority of people might experience anxiety and panic on their first day
+                            of
+                            school, college, during a job interview, or when giving a speech in front of people. The
+                            experience
+                            of anxiety varies from […]</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center p-3 position-relative">
+                    <div class="fa fa-plus align-items-center d-flex justify-content-center position-absolute"
+                        style="background-color:#ffffffa6;height: 45px;width:45px;border-radius:50px;right: 50px;top: -8px;">
+                    </div>
+                    <div class="p-2 pt-4"
+                        style="background-color:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+                        <a href="" target="_blank" class="text-white text-decoration-none" style="font-size: 22px;">10
+                            SURPRISING FACTS ABOUT ANXIETY</a>
+                    </div>
+                    <div class="p-3 scrollbarWidth"
+                        style="background-color:rgba(255,255,255,.075);height:240px;overflow-y:scroll;border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+
+                        <div class="" style="text-align: justify;">Seeking a psychotherapist in your twenties might be
+                            difficult,
+                            but there are several resources available to assist you in finding the support and
+                            connection you require to face the obstacles of parenthood. It is not just feasible to
+                            discover a good therapeutic fit with a loving, dedicated physician, but it is also
+                            conceivable to do […]</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center p-3 position-relative">
+                    <div class="fa fa-plus align-items-center d-flex justify-content-center position-absolute"
+                        style="background-color:#ffffffa6;height: 45px;width:45px;border-radius:50px;right: 50px;top: -8px;">
+                    </div>
+                    <div class="p-2 pt-4"
+                        style="background-color:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+                        <a href="" target="_blank" class="text-white text-decoration-none" style="font-size: 22px;">10
+                            SURPRISING FACTS ABOUT ANXIETY</a>
+                    </div>
+                    <div class="p-3 scrollbarWidth"
+                        style="background-color:rgba(255,255,255,.075);height:240px;overflow-y:scroll;border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+
+                        <div class="" style="text-align: justify;">Depression is a serious disorder and an outcome of
+                            long term
+                            stress and anxiety that gets worse over the period of time. Daily stress is a common part of
+                            life that may occur due to several reasons such as work pressure, family issues,
+                            relationship problems, and much more. It can happen to anyone regardless of […]</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 text-center p-3 position-relative">
+                    <div class="fa fa-plus align-items-center d-flex justify-content-center position-absolute"
+                        style="background-color:#ffffffa6;height: 45px;width:45px;border-radius:50px;right: 50px;top: -8px;">
+                    </div>
+                    <div class="p-2 pt-4"
+                        style="background-color:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+                        <a href="" target="_blank" class="text-white text-decoration-none" style="font-size: 22px;">10
+                            SURPRISING FACTS ABOUT ANXIETY</a>
+                    </div>
+                    <div class="p-3 scrollbarWidth"
+                        style="background-color:rgba(255,255,255,.075);height:240px;overflow-y:scroll;border:1px solid rgba(255,255,255,.1);box-shadow: 1px 1px 2px 0px #63616154;">
+
+                        <div class="" style="text-align: justify;">It’s easy to find a telehealth therapist for yourself
+                            today,
+                            yet increasingly hard to know whether you’ve discovered the best one for you or not. You may
+                            have multiple queries that will help you pick one of the best therapist in NJ. This article
+                            diagrams some of these inquiries. What does it feel like when […]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-relative text-white">
+            <div class="position-absolute p-3" style="height: 80vh;background-color: #1d9390;width: 300px;right: 12%;">
+                <div class="text-center mt-3" style="font-size: 22px;">WORKING HOURS</div>
+                <div class="p-3 pt-4">
+                    <div class="d-flex">
+                        <div class="">Mon – FRI</div>
+                        <div class="" style="margin-left: auto;">8:00 AM – 8:00 PM</div>
+                    </div>
+                    <hr style="height: 2px;">
+                    <div class="d-flex">
+                        <div class="">Saturday</div>
+                        <div class="" style="margin-left: auto;">8:00 AM – 6:00 PM</div>
+                    </div>
+                    <hr style="height: 2px;">
+                    <div class="d-flex">
+                        <div class="">Sunday</div>
+                        <div class="" style="margin-left: auto;">Closed</div>
+                    </div>
+                </div>
+                <div class="text-center mt-5" style="font-size: 22px;">CONTACT DETAILS</div>
+                <div class="p-3 pt-4">
+                    <div class="d-flex align-items-center mb-4"><span class="fa fa-map-marker"
+                            style="margin-right: 30px;font-size: 2.5rem;"></span>
+                        <div style="margin-left: auto;">140 State Route 17 N, Ste 250, Paramus, New Jersey, 07652</div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4"><span class="fa fa-envelope-open-o fa-2x"
+                            style="margin-right: 30px;"></span>
+                        <div style="margin-left: auto;">drimran55@hotmail.com</div>
+                    </div>
+                    <div class="d-flex align-items-center"><span class="fa fa-phone fa-2x"
+                            style="margin-right: 30px;"></span>
+                        <div style="margin-left: auto;"> 201 835 0536</div>
+                    </div>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48219.083505066534!2d-74.10512240666364!3d40.94440125251545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fade00f3d0a1%3A0xc918e3233e30c210!2sParamus%2C%20NJ%2007652%2C%20USA!5e0!3m2!1sen!2sin!4v1663755574229!5m2!1sen!2sin"
+                width="100%" style="border:0;height: 80vh;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row gx-0">
+            <div class="col-lg-6 col-12">
+                <div class="py-5" style="background-color:rgba(188, 217, 215, 1);">
+                    <img src="./140.webp" class="img-fluid py-5" style="width: 100%;height: 75vh;" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 p-5">
+                <div class="" style="font-size: 22px;">Want a call from one of the best Therapist in NJ?</div>
+                <hr class="my-2" style="margin:0;width: 70px;height: 2px; color: blue;">
+                <form class="mt-4">
+                    <label>Your Name (required)</label>
+                    <input type="text" class="form-control rounded-0 border-0 mb-3"
+                        style="background-color: rgba(0,0,0,.07);" required />
+                    <label>Your Email (required)</label>
+                    <input type="text" class="form-control rounded-0 border-0 mb-3"
+                        style="background-color: rgba(0,0,0,.07);" required />
+                    <label>Phone Number (required)</label>
+                    <input type="text" class="form-control rounded-0 border-0 mb-3"
+                        style="background-color: rgba(0,0,0,.07);" required />
+                    <label>Additional Message</label>
+                    <textarea rows="6" class="form-control rounded-0 border-0 mb-3"
+                        style="background-color: rgba(0,0,0,.07);" required></textarea>
+
+                    <button type="submit" class="btn btn-transparent bg-transparent shadow-lg rounded-0 px-5 py-2 mt-3"
+                        style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">BOOK YOUR
+                        APPOINTEMENT
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="bg-dark" style="height: 150px;"></div>
+        <div class="" style="height: 70px;background-color: #17a2b8;">
+            <div class="container d-flex text-white align-items-center" style="height: 100%;">
+                <div class="">
+                    Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
+                </div>
+                <div class="d-flex" style="margin-left: auto;">
+                    <div class="fa fa-facebook-f px-2"></div>
+                    <div class="fa fa-twitter px-2"></div>
+                    <div class="fa fa-google-plus px-2"></div>
+                    <div class="fa fa-linkedin-square px-2"></div>
+                    <div class="fa fa-instagram px-2"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
