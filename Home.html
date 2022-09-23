@@ -17,23 +17,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <style>
-    .nav-item:hover .dropdown-menu {
-        display: block;
-        animation: fadeIn 0.4s linear forwards;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-            transform: translateY(15%);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
     .btn-transparent:hover {
         background-color: white !important;
         color: #1d9390 !important;
@@ -73,6 +56,26 @@
         transition: 0.5s !important;
         color: #17a2b8 !important;
         background-color: white;
+    }
+
+    .carousel-caption {
+        width: 40%;
+        text-align: justify;
+        height: 100%;
+        align-items: center;
+        display: flex;
+    }
+
+    .carousel-caption .btn-primary:hover {
+        background-color: rgba(153, 195, 189, 1) !important;
+    }
+
+    .carousel-caption .btn-primary1:hover {
+        background-color: #055e5b !important;
+    }
+
+    .menuName:hover .navbar {
+        display: none !important;
     }
 </style>
 
@@ -148,7 +151,7 @@
     </nav>
 
     <header class="top-0 position-sticky" id="header" style="z-index: 999;">
-        <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+        <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2"
             style="box-shadow:0px 1px 2px 0px silver;z-index:999">
             <div class="container-lg container-fluid">
                 <a href="" class="navbar-brand" href="#">
@@ -160,18 +163,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" style="margin-left: auto;">
-                        <li class="active nav-item px-1">
+                        <li class="nav-item px-1">
                             <a href="./Components/Imran.html" exact class="nav-link"
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 ABOUT DR. IMRAN RASID
                             </a>
                         </li>
+
                         <li class="nav-item px-1 position-relative">
                             <a href="#" class="nav-link d-flex align-items-center"
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
                             </a>
-                            <div class="dropdown-menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class="dropdown-menu rounded-0 border-0 py-3" style=" width: fit-content">
                                 <div class=" justify-content-center d-flex">
                                     <div class="" style="border-top: 3px solid rgba(153, 195, 189, 1);
                                     background: #eee;
@@ -206,7 +210,7 @@
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 SERVICES&nbsp;<span class="fa fa-angle-down"></span>
                             </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
                                 <div class=" justify-content-center d-flex">
                                     <div class="" style="border-top: 3px solid rgba(153, 195, 189, 1);
                                     background: #eee;
@@ -216,10 +220,17 @@
                                         <ul class="list-unstyled dropdownHover">
                                             <a href="./Components/adult.html" class="text-decoration-none text-dark">
                                                 <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Therapist for Stress
-                                                        Adult</div>
+                                                    <div class="dropdown" style="width: 100%;">
+                                                        Adult
+                                                        <div class="dropdown-content py-2 my-2"
+                                                            style="border-top: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
+                                                            Post-traumatic Stress Disorder (PTSD) <div
+                                                                class="fa fa-angle-left px-3"></div>
+                                                        </div>
+                                                    </div>
                                                     <div class="fa fa-angle-left px-3"></div>
                                                 </li>
+
                                             </a>
                                             <a href="./Components/eliminateFearsAndPhobias.html"
                                                 class="text-decoration-none text-dark">
@@ -268,19 +279,19 @@
                             </div>
                         </li>
                         <li class="nav-item px-1">
-                            <a href="/blog" class="nav-link"
+                            <a href="./Components/testimonials.html" class="nav-link"
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 TESTIMONIALS
                             </a>
                         </li>
                         <li class="nav-item px-1">
-                            <a href="/services" class="nav-link"
+                            <a href="./Components/blog.html" class="nav-link"
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 BLOG
                             </a>
                         </li>
                         <li class="nav-item px-1">
-                            <a href="/contact" class="nav-link"
+                            <a href="./Components/contact.html" class="nav-link"
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 CONTACT US
                             </a>
@@ -377,55 +388,129 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./Images/slides_1.webp" class="d-block w-100" style="min-height: 60vh;" alt="...">
-                    <div class="carousel-caption">
-                        <p style="font-size: 22px;">Advancing online Video Conferencing therapy to benefit the community
-                            and better humans lives.
-                        </p>
-                        <p style="font-size: 18px;">Stress Reduction Clinic Offers Online & Phone Counselling for
-                            Relationships, Breakups,
-                            Marriage, Work Stress, Depression, etc. You can speak to Dr. Imran anytime of the day for
-                            Counseling, Assessment, and Consultation.</p>
+                    <div class="carousel-caption text-start">
+                        <div>
+                            <p class="m-0" style="font-size: 22px;">Advancing online Video Conferencing therapy to
+                                benefit the community
+                                and better humans lives.
+                            </p>
+                            <hr class="my-2" style="height: 2.5px;color:#10f6ee;width:75px">
+                            <p style="font-size: 18px;">Stress Reduction Clinic Offers Online & Phone Counselling for
+                                Relationships, Breakups,
+                                Marriage, Work Stress, Depression, etc. You can speak to Dr. Imran anytime of the day
+                                for
+                                Counseling, Assessment, and Consultation.</p>
+                            <div class="d-flex">
+                                <div class="btn btn-primary rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #bfded9;font-weight: 500;transition: 0.5s; color: white;">
+                                    FIND OUT MORE
+                                </div>
+                                <div class="btn btn-primary1 mx-3 rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #1d9390;font-weight: 500;transition: 0.5s; color: white;">
+                                    Get Telehealth Therapy over
+                                    Phone
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="./Images/slides_2.webp" class="d-block w-100" style="min-height: 60vh;" alt="...">
                     <div class="carousel-caption">
-                        <p style="font-size: 22px;">Change your life in a positive way from today and forever. Call Dr.
-                            Imran and get Tele
-                            therapist in NJ for all your stress and depression-related problems.</p>
-                        <p style="font-size: 18px;">With his professional experience lasting for more than 25 years, Dr.
-                            Imran Rasid is the right
-                            call for patients suffering from Stress, Pain, Fear/Phobias, Addictions or any other anxiety
-                            disorders</p>
+                        <div>
+                            <p class="m-0" style="font-size: 22px;">Change your life in a positive way from today and
+                                forever. Call
+                                Dr.
+                                Imran and get Tele
+                                therapist in NJ for all your stress and depression-related problems.</p>
+                            <hr class="my-2" style="height: 2.5px;color:#10f6ee;width:75px">
+                            <p style="font-size: 18px;">With his professional experience lasting for more than 25 years,
+                                Dr.
+                                Imran Rasid is the right
+                                call for patients suffering from Stress, Pain, Fear/Phobias, Addictions or any other
+                                anxiety
+                                disorders</p>
+                            <div class="d-flex">
+                                <div class="btn btn-primary rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #bfded9;font-weight: 500;transition: 0.5s; color: white;">
+                                    FIND OUT MORE
+                                </div>
+                                <div class="btn btn-primary1 mx-3 rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #1d9390;font-weight: 500;transition: 0.5s; color: white;">
+                                    Get Telehealth Therapy over
+                                    Phone
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./Images/slides_3.webp" class="d-block w-100" style="min-height: 60vh;" alt="...">
                     <div class="carousel-caption">
-                        <p style="font-size: 22px;">Discover your brainpower for living a successful life. Don’t take
-                            stress that cause mental
-                            health. Call now to get Online telehealth therapy in NJ for Covid-19</p>
-                        <p style="font-size: 18px;">Dr. Imran Rasid is the right call for patients suffering from
-                            Stress, Pain, Fear/Phobias,
-                            Addictions or any other anxiety disorders. Counseling by Online Chat, Video or Phone
-                            Available Anytime, Anywhere. Get the Help You Need Now with one of the best therapists in
-                            Paramus.</p>
+                        <div>
+                            <p class="m-0" style="font-size: 22px;">Discover your brainpower for living a successful
+                                life. Don’t
+                                take
+                                stress that cause mental
+                                health. Call now to get Online telehealth therapy in NJ for Covid-19</p>
+                            <hr class="my-2" style="height: 2.5px;color:#10f6ee;width:75px">
+                            <p style="font-size: 18px;">Dr. Imran Rasid is the right call for patients suffering from
+                                Stress, Pain, Fear/Phobias,
+                                Addictions or any other anxiety disorders. Counseling by Online Chat, Video or Phone
+                                Available Anytime, Anywhere. Get the Help You Need Now with one of the best therapists
+                                in
+                                Paramus.</p>
+                            <div class="d-flex">
+                                <div class="btn btn-primary rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #bfded9;font-weight: 500;transition: 0.5s; color: white;">
+                                    FIND OUT MORE
+                                </div>
+                                <div class="btn btn-primary1 mx-3 rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #1d9390;font-weight: 500;transition: 0.5s; color: white;">
+                                    VIEW SERVICES
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./Images/Dr-Imran-1.webp" class="d-block w-100" style="min-height: 60vh;" alt="...">
                     <div class="carousel-caption">
-                        <p style="font-size: 18px;" class="text-dark">Eliminate your uncomfortable feelings and
-                            discomfort right away with Dr. Imran Rasid.</p>
+                        <div>
+                            <p style="font-size: 18px;" class="text-dark">Eliminate your uncomfortable feelings and
+                                discomfort right away with Dr. Imran Rasid.</p>
+                            <div class="d-flex">
+                                <div class="btn btn-primary rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #bfded9;font-weight: 500;transition: 0.5s; color: white;">
+                                    FIND OUT MORE
+                                </div>
+                                <div class="btn btn-primary1 mx-3 rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #1d9390;font-weight: 500;transition: 0.5s; color: white;">
+                                    VIEW SERVICES
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./Images/Dr-Imran2-2.webp" class="d-block w-100" style="min-height: 60vh;" alt="...">
                     <div class="carousel-caption">
-                        <p style="font-size: 18px;" class="text-dark">Enjoy the beauty of the session by relaxing
-                            mentally and physically, you will feel amazing
-                            and powerful.</p>
+                        <div>
+                            <p style="font-size: 18px;" class="text-dark">Enjoy the beauty of the session by relaxing
+                                mentally and physically, you will feel amazing
+                                and powerful.</p>
+                            <div class="d-flex">
+                                <div class="btn btn-primary rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #bfded9;font-weight: 500;transition: 0.5s; color: white;">
+                                    FIND OUT MORE
+                                </div>
+                                <div class="btn btn-primary1 mx-3 rounded-0 my-3 border-0 px-4 py-lg-3"
+                                    style="background-color: #1d9390;font-weight: 500;transition: 0.5s; color: white;">
+                                    VIEW SERVICES
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -452,7 +537,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="btn btn-primary mx-5 rounded-0 shadow-lg mb-4 border-0 py-3 px-5"
+                    <div class="btn btn-primary mx-5 rounded-0 mb-4 border-0 py-3 px-5"
                         style="background-color: #1d9390;font-weight: 500;margin-right: auto;">Call Now for Tele Therepy
                     </div>
                 </div>
@@ -474,7 +559,7 @@
                         Video
                         & Tele-Therapy in Paramus NJ.
                     </div>
-                    <div class="btn btn-primary rounded-0 shadow-lg my-3 border-0 py-3 px-5"
+                    <div class="btn btn-primary rounded-0 my-3 border-0 py-3 px-5"
                         style="background-color: #1d9390;font-weight: 500;">Want Video or Telehealth Therapy? Call Now
                     </div>
                 </div>
@@ -516,7 +601,7 @@
                         trained
                         in Europe, Canada & USA.
                     </div>
-                    <div class="btn btn-transparent bg-transparent shadow-lg rounded-0 px-5 py-2 mt-3 mb-5"
+                    <div class="btn btn-transparent bg-transparent rounded-0 px-5 py-2 mt-3 mb-5"
                         style="transition:0.5s;border: 2px solid white;color: white;font-weight: 500;">Tele Therapy: 201
                         835 0536</div>
                 </div>
@@ -894,7 +979,7 @@
                     <textarea rows="6" class="form-control rounded-0 border-0 mb-3"
                         style="background-color: rgba(0,0,0,.07);" required></textarea>
 
-                    <button type="submit" class="btn btn-transparent bg-transparent shadow-lg rounded-0 px-5 py-2 mt-3"
+                    <button type="submit" class="btn btn-transparent bg-transparent rounded-0 px-5 py-2 mt-3"
                         style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">BOOK YOUR
                         APPOINTEMENT
                     </button>
@@ -929,6 +1014,8 @@
 
         </div>
     </footer>
+
+
 </body>
 <script src="./index.js"></script>
 

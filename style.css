@@ -1,8 +1,33 @@
 body {
   font-size: 14px !important;
 }
-
+.btn {
+  box-shadow: 1px 1px 2px 0px #80808082 !important;
+}
 /* ----------------------------------NavBar---------------------------------- */
+.nav-item.active{
+  border-bottom: 3px solid rgba(153, 195, 189, 1);
+}
+#navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+header {
+  font-family: "Times New Roman", Times, serif !important;
+}
+.dropdown-content {
+  display: none;
+  /* background-color: #eee; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  text-decoration: underline;
+}
+
+
 .dropdown-menu {
   opacity: 1;
   background-color: transparent !important;
@@ -41,8 +66,7 @@ body {
   }
 }
 .navbar.active {
-  animation: fadeNav 0.7s linear forwards;
-  background: white !important;
+  animation: fadeNav 0.4s linear forwards;
   box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
 }
 
