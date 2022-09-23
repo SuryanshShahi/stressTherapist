@@ -18,6 +18,38 @@
 </head>
 
 <style>
+    .nav-item:hover .dropdown-menu {
+        display: block;
+        animation: fadeIn 0.4s linear forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(15%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .dropdown-menu {
+        opacity: 1;
+        background-color: transparent !important;
+        top: 60%;
+        left: 0;
+    }
+
+    .dropdownHover li:hover {
+        cursor: pointer;
+        color: grey !important;
+        transition: 0.3s;
+        text-decoration: underline;
+    }
+
+
     .btn-transparent:hover {
         background-color: white !important;
         color: #1d9390 !important;
@@ -79,7 +111,7 @@
 </style>
 
 <body>
-    <nav class="topnav" style="border-bottom: 1px solid black;">
+    <nav class="topnav" style="border-bottom: 0.1px solid silver;">
         <div class="container-lg container-fluid">
             <div class="row my-2" style="font-size: 10px;">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
@@ -148,7 +180,7 @@
     </nav>
 
     <nav class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
-        style="box-shadow: 0px 1px 2px 1px grey;top: 0;position:sticky;z-index:1">
+        style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
         <div class="container-lg container-fluid">
             <a href="" class="navbar-brand" href="#">
                 <img src="./Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
@@ -165,11 +197,105 @@
                             ABOUT DR. IMRAN RASID
                         </a>
                     </li>
-                    <li class="nav-item pl-3">
-                        <a href="/about" class="nav-link"
+                    <li class="nav-item px-3 position-relative">
+                        <a href="#" class="nav-link d-flex align-items-center"
                             style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
-                            FIND A THERAPIST
+                            FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
                         </a>
+                        <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class=" justify-content-center d-flex">
+                                <div class="" style="border-bottom: 3px solid #086AD8;
+                                    background: #fffffff2;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                    <ul class="list-unstyled dropdownHover">
+                                        <a href="./Components/stressReduction.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">Therapist for Stress
+                                                Reduction&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+                                            </li>
+                                        </a>
+                                        <a href="./Components/treatmentsForAddictions.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">Treatment for addictions&nbsp;<span
+                                                    class="fa fa-angle-left" style="margin-left: auto;"></span>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item px-3 position-relative">
+                        <a href="#" class="nav-link d-flex align-items-center"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class=" justify-content-center d-flex">
+                                <div class="" style="border-bottom: 3px solid #086AD8;
+                                    background: #fffffff2;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                    <ul class="list-unstyled dropdownHover">
+                                        <a href="./Components/adult.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">
+
+                                                Adult&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+
+                                            </li>
+                                        </a>
+                                        <a href="./Components/eliminateFearsAndPhobias.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">
+
+                                                Eliminate Fears & Phobias&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+
+                                            </li>
+                                        </a>
+                                        <a href="./Components/stressAndAnxietytreatment.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">
+
+                                                Stress and Anxiety Treatment&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">
+
+                                                Addiction Treatment&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">
+
+                                                Anxiety & Depression Treatment&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 px-4">
+
+                                                Mental Health & Addiction Therapies&nbsp;<span class="fa fa-angle-left"
+                                                    style="margin-left: auto;"></span>
+
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item pl-3">
                         <a href="/project" class="nav-link"
