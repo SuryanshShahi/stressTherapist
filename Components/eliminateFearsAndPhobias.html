@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <title></title>
+    <link rel="stylesheet" href="../style.css" />
     <link rel="icon" href="Images/titleLogo.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+<script src="../index.js"></script>
 <style>
     .nav-item:hover .dropdown-menu {
         display: block;
@@ -77,7 +79,8 @@
 </style>
 
 <body>
-    <nav class="topnav" style="border-bottom: 0.1px solid silver;">
+    <header class="fixed-top" id="header" style="z-index: 999;background-color: white;">
+    <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
         <div class="container-lg container-fluid">
             <div class="row my-2" style="font-size: 10px;">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
@@ -145,7 +148,7 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+    <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
         style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
         <div class="container-lg container-fluid">
             <a href="../Home.html" class="navbar-brand" href="#">
@@ -344,7 +347,7 @@
             </div>
         </div>
     </nav>
-
+</header>
     <section>
         <div class="row gx-0">
             <div class="col-lg-6 col-md-6 col-12 gx-0">
@@ -352,10 +355,10 @@
             </div>
             <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
                 style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
-                <div>
+                <div class="container-sm">
                     <div style="font-size: 60px;">Eliminate Fears and Phobias</div>
                     <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <p style="font-size: 14px;font-weight:500;text-align:justify">Most people experience fears and
+                    <p style="font-size: 14px;text-align:justify">Most people experience fears and
                         phobias and, many have been dealing with them for a long time. One can easily overcome these
                         problems with the help of therapy. More than 12% of people experience simple phobias in their
                         lives. We often see the development of phobias during childhood and they get aggravated during
@@ -395,7 +398,7 @@
         <div class="text-white pt-3 pb-5" style="background-color:#1d9390;">
             <div class="container">
                 <div class="" style="font-size:60px">Therapy for fear and phobia</div>
-                <p style="font-size: 14px;font-weight:500;text-align: justify;">There are a number of people in this
+                <p style="font-size: 14px;text-align: justify;">There are a number of people in this
                     world, who are suffering from fear and phobias. We all have some tension and insecurities in life,
                     however, if we constantly think about things that worry us, then it’ll make the situation even
                     worse. So, rather than thinking of the issues, we must always try and think about their solutions.
@@ -422,7 +425,7 @@
         <div class="pt-3 pb-5">
             <div class="container">
                 <div class="" style="font-size:60px;font-weight: 400;">Most Common Fears & Phobias</div>
-                <p style="font-size: 14px;font-weight:500;text-align: justify;">The fear of flying could be a common
+                <p style="font-size: 14px;text-align: justify;">The fear of flying could be a common
                     phobia for several individuals. It can hinder vacation and travel plans. This fear will cause such a
                     large number of difficulties issues for individuals particularly if their job require them to
                     travel. Therapy for fear of flying is often an opportune cure. The fear of flying might, like every
