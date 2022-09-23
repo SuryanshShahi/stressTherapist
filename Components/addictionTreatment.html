@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="Images/titleLogo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    .nav-item:hover .dropdown-menu {
+        display: block;
+        animation: fadeIn 0.4s linear forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(15%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .dropdown-menu {
+        opacity: 1;
+        background-color: transparent !important;
+        top: 60%;
+        left: 0;
+    }
+
+    .dropdownHover li:hover {
+        cursor: pointer;
+        color: grey !important;
+        transition: 0.3s;
+    }
+
+    .dropdown-menu li {
+        padding-left: 20px;
+    }
+
+    .dropdownHover .menuName:hover {
+        text-decoration: underline;
+    }
+
+    .btn-transparent:hover {
+        background-color: #1d9390 !important;
+        color: white !important;
+    }
+
+    @media(max-width:574px) {
+        .topnav {
+            display: none;
+        }
+
+        .logo {
+            height: 50px !important;
+        }
+    }
+
+    @media(min-width:574px) {
+        .topNavSocialDetails {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <nav class="topnav" style="border-bottom: 0.1px solid silver;">
+        <div class="container-lg container-fluid">
+            <div class="row my-2" style="font-size: 10px;">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
+                    style="border-right: 1px solid #fff;">
+                    <div class="d-flex align-items-center">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a href="" target="_blank" class="text-decoration-none px-2 active" style="color: grey;">
+                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                AM-8:00 PM</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                    <div class="d-flex align-items-center">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                    <div class="d-flex align-items-center">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
+                                835
+                                0536</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
+                    <div class="d-flex list-unstyled align-items-center">
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                style="color: grey;"></a>
+                        </div>
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                style="color: grey;"></a>
+                        </div>
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                style="color: grey;"></a>
+                        </div>
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                style="color: grey;"></a>
+                        </div>
+
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                style="color: grey;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+        style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+        <div class="container-lg container-fluid">
+            <a href="../Home.html" class="navbar-brand" href="#">
+                <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="fa fa-bars fa-lg"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                    <li class="active nav-item px-1">
+                        <a href="./Imran.html" exact class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            ABOUT DR. IMRAN RASID
+                        </a>
+                    </li>
+                    <li class="nav-item px-1 position-relative">
+                        <a href="#" class="nav-link d-flex align-items-center"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class=" justify-content-center d-flex">
+                                <div class="" style="border-top: 3px solid #086AD8;
+                            background: #fffffff2;
+                            box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                            width: max-content;
+                          ">
+                                    <ul class="list-unstyled dropdownHover">
+                                        <a href="./stressReduction.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Therapist for Stress
+                                                    Reduction</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="./treatmentsForAddictions.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Treatment for addictions
+                                                </div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item px-1 position-relative">
+                        <a href="#" class="nav-link d-flex align-items-center"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class=" justify-content-center d-flex">
+                                <div class="pb-1" style="border-top: 3px solid #086AD8;
+                            background: #fffffff2;
+                            box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                            width: max-content;
+                          ">
+                                    <ul class="list-unstyled dropdownHover">
+                                        <a href="./adult.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Adult</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="./eliminateFearsAndPhobias.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Eliminate Fears & Phobias
+                                                </div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="./stressAndAnxietytreatment.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Stress and Anxiety Treatment
+                                                </div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Addiction Treatment</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Anxiety & Depression
+                                                    Treatment</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Mental Health & Addiction
+                                                    Therapies</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="/blog" class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            TESTIMONIALS
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="/services" class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            BLOG
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="/contact" class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+                <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
+                        style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="" target="_blank" class="text-decoration-none px-2 active" style="color: grey;">
+                                WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT
+                                    8:00
+                                    AM-8:00 PM</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                                EMAIL: <span
+                                    style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                                PHONE: <span style="font-weight: 500;color: black;"
+                                    style="color: black;">&nbsp;&nbsp;201
+                                    835
+                                    0536</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
+                        <div class="d-flex list-unstyled align-items-center">
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
+
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="row gx-0">
+            <div class="col-lg-6 col-md-6 col-12 gx-0">
+                <img src="../Images/great_american_smokeout_cover.png" class="img-fluid"
+                    style="width: 100%;height:100%;" />
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
+                style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
+                <div>
+                    <div style="font-size: 35px;">How To Quit Smoking With “Therapy For Addictions”</div>
+                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
+                    <p style="font-size: 14px;font-weight:500;text-align:justify">Do you want to quit smoking with the
+                        help of therapy? Know about the working of therapy for addictions.
+                        <br><br>
+                        We all know quitting smoking is not an easy task for anyone. Most of the people want to quit
+                        smoking habits, they have tried but failed.
+                        <br><br>
+                        We all know that therapy for an addiction has long been recognized for the comical outcome of a
+                        staged therapy. The America Lung Association report says that In United States 480,000 people
+                        die from tobacco every year due to smoking.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
+                style="background-color: rgba(125, 193, 187, 1);font-size: 20px;">
+                <div>
+                    <div style="font-size: 35px;">Reduce Alcohol Abuse</div>
+                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
+                    <p style="font-size: 14px;font-weight:500;text-align:justify">Alcohol abuse effect can destroy
+                        families, health etc. The effect of alcohol abuse is not only to the drinker but also for those
+                        around her or him. It can affect both psychological and physical health. Alcohol abuse causes a
+                        change in behavior and deteriorates health.
+                        <br><br>
+                        You are not alone if you want to overcome this problem. If you are struggling with this habit of
+                        your own, Therapy is the solution to your problem. You can try therapy for alcoholism.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 gx-0">
+                <img src="../Images/drinking-alcohol.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12 gx-0">
+                <img src="../Images/Overeating.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
+                style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
+                <div>
+                    <div style="font-size: 35px;">Treatment For Food Addiction</div>
+                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
+                    <p style="font-size: 14px;font-weight:500;text-align:justify">Food addicts eat way more than
+                        required for proper nutrition and they continue to binge on things that make them feel good.This
+                        may have a number of negative physical, psychological, and social effects, including
+                        cardiovascular diseases, obesity, lack of self-confidence, depression, and social alienation.
+                        Due to the demand for induced emotions of joy, a food addict frequently resumes these harmful
+                        actions despite unintended consequences. It is critical to seek professional assistance from a
+                        food addiction therapist near me due to the vicious cycle of food addiction and the negative
+                        effects connected with this habit.
+                        <br><br>
+                        You may have gone through a lot of feelings, such as disappointment, frustration, and
+                        helplessness, so if you or a dear one has become trapped in the vicious cycle of an eating
+                        disorder. You might not be able to live the life you once did because of your food addiction,
+                        but a recovery is always an option. You can get the resources you need to effectively deal with
+                        your food addiction by getting the treatment and care you need. Thank goodness, there are
+                        specialized facilities like addiction centers or an addiction therapist nearby that can assist
+                        you in treating food addiction in a holistic and all-encompassing way. Treatment facilities for
+                        food addiction provide multi-specialty care that integrates psychotherapy while concentrating on
+                        and addressing medical problems and dietary issues.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-dark" style="height: 120px;"></div>
+        <div class="" style="min-height: 70px;background-color: #17a2b8;">
+            <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                    <div class="text-lg-start text-md-start text-sm-start text-center">
+                        Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
+                    style="margin-left: auto;">
+                    <div class="d-flex">
+                        <div class="fa fa-facebook-f px-2"></div>
+                        <div class="fa fa-twitter px-2"></div>
+                        <div class="fa fa-google-plus px-2"></div>
+                        <div class="fa fa-linkedin-square px-2"></div>
+                        <div class="fa fa-instagram px-2"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

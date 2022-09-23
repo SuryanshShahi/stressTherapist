@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="Images/titleLogo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    .nav-item:hover .dropdown-menu {
+        display: block;
+        animation: fadeIn 0.4s linear forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(15%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .dropdown-menu {
+        opacity: 1;
+        background-color: transparent !important;
+        top: 60%;
+        left: 0;
+    }
+
+    .dropdownHover li:hover {
+        cursor: pointer;
+        color: grey !important;
+        transition: 0.3s;
+    }
+
+    .dropdown-menu li {
+        padding-left: 20px;
+    }
+
+    .dropdownHover .menuName:hover {
+        text-decoration: underline;
+    }
+
+    .btn-transparent:hover {
+        background-color: #1d9390 !important;
+        color: white !important;
+    }
+
+    @media(max-width:574px) {
+        .topnav {
+            display: none;
+        }
+
+        .logo {
+            height: 50px !important;
+        }
+    }
+
+    @media(min-width:574px) {
+        .topNavSocialDetails {
+            display: none;
+        }
+    }
+
+    .btn-transparent:hover {
+        background-color: white !important;
+        color: #1d9390 !important;
+    }
+
+    .btn-transparent1:hover {
+        background-color: #1d9390 !important;
+        color: white !important;
+    }
+</style>
+
+<body>
+    <nav class="topnav" style="border-bottom: 0.1px solid silver;">
+        <div class="container-lg container-fluid">
+            <div class="row my-2" style="font-size: 10px;">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
+                    style="border-right: 1px solid #fff;">
+                    <div class="d-flex align-items-center">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a href="" target="_blank" class="text-decoration-none px-2 active" style="color: grey;">
+                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                AM-8:00 PM</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                    <div class="d-flex align-items-center">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                    <div class="d-flex align-items-center">
+                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                        <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
+                                835
+                                0536</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
+                    <div class="d-flex list-unstyled align-items-center">
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                style="color: grey;"></a>
+                        </div>
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                style="color: grey;"></a>
+                        </div>
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                style="color: grey;"></a>
+                        </div>
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                style="color: grey;"></a>
+                        </div>
+
+                        <div class="">
+                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                style="color: grey;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+        style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+        <div class="container-lg container-fluid">
+            <a href="../Home.html" class="navbar-brand" href="#">
+                <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="fa fa-bars fa-lg"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                    <li class="active nav-item px-1">
+                        <a href="./Imran.html" exact class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            ABOUT DR. IMRAN RASID
+                        </a>
+                    </li>
+                    <li class="nav-item px-1 position-relative">
+                        <a href="#" class="nav-link d-flex align-items-center"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class=" justify-content-center d-flex">
+                                <div class="" style="border-top: 3px solid #086AD8;
+                            background: #fffffff2;
+                            box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                            width: max-content;
+                          ">
+                                    <ul class="list-unstyled dropdownHover">
+                                        <a href="./stressReduction.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Therapist for Stress
+                                                    Reduction</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="./treatmentsForAddictions.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Treatment for addictions
+                                                </div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item px-1 position-relative">
+                        <a href="#" class="nav-link d-flex align-items-center"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
+                            <div class=" justify-content-center d-flex">
+                                <div class="pb-1" style="border-top: 3px solid #086AD8;
+                            background: #fffffff2;
+                            box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                            width: max-content;
+                          ">
+                                    <ul class="list-unstyled dropdownHover">
+                                        <a href="./adult.html" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Adult</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="./eliminateFearsAndPhobias.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Eliminate Fears & Phobias
+                                                </div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="./stressAndAnxietytreatment.html"
+                                            class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Stress and Anxiety Treatment
+                                                </div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Addiction Treatment</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Anxiety & Depression
+                                                    Treatment</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                        <a href="" class="text-decoration-none text-dark">
+                                            <li class="py-2 d-flex align-items-center">
+                                                <div class="menuName" style="width: 100%;">Mental Health & Addiction
+                                                    Therapies</div>
+                                                <div class="fa fa-angle-left px-3"></div>
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="/blog" class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            TESTIMONIALS
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="/services" class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            BLOG
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="/contact" class="nav-link"
+                            style="color: #444;font-weight:500;font-family:'Times New Roman', Times, serif">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
+                <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
+                        style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="" target="_blank" class="text-decoration-none px-2 active" style="color: grey;">
+                                WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT
+                                    8:00
+                                    AM-8:00 PM</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                                EMAIL: <span
+                                    style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="" target="_blank" class="text-decoration-none px-2" style="color: grey;">
+                                PHONE: <span style="font-weight: 500;color: black;"
+                                    style="color: black;">&nbsp;&nbsp;201
+                                    835
+                                    0536</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
+                        <div class="d-flex list-unstyled align-items-center">
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
+
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="">
+        <div class="" style="background-color:#74c1bb;">
+            <div class="container">
+                <div class="" style="font-size: 60px;">Therapy for anxiety and depression in NJ</div>
+                <div class="row py-2">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <p style="text-align: justify;font-size: 14px;">Are you looking for Therapy for anxiety and
+                            depression in NJ? Therapy for anxiety treatment is a technique to treat anxiety disorder
+                            patient. Generally, people did not know about anxiety disorder? Anxiety disorders are the
+                            most
+                            familiar of emotional ailments, yearly upsetting approximately twenty million individuals
+                            within
+                            the North American country alone. Anxiety could be a state of mind that hampers with the
+                            daily
+                            activities like communication with others, behavior with other. Since it deals with the
+                            brain
+                            part, it’s called the subconscious brain; it could be a well-known technique for treating
+                            this
+                            type of psychological disorder. Therapy for anxiety and depression is the best way to reduce
+                            anxiety disorder and depression. It will bring an individual into a state or relaxation
+                            wherever
+                            the person will focus on and think about things he would really like to think. Treatment of
+                            Anxiety disorders permeates somebody’s existence with extreme apprehension and dread. Once
+                            anxiety involves a stage that the victim goes through the signs that go beyond those usually
+                            encountered by someone, an anxiety attack is developed. By giving positive affirmations to
+                            the
+                            person throughout Therapy, this attack can settle down frequent and eventually disappears.
+                            Anxiety attacks are powerful emotions that any person who generates the sensation of dying
+                            or
+                            going mad. These disorders are probably hereditary. Persons with anxiety disorders
+                            oftentimes
+                            have a family background of anxiety, mood swings, or abuse. It will happen all over, whether
+                            or
+                            not a person is at the house, at the workplace or maybe in open areas, at the college
+                            involving
+                            several persons from alternative components of the globe. Hence, Therapy for anxiety and
+                            depression could be a welcome approach to minimize the occurrence of those anxiety disorders
+                            or
+                            treatment of anxiety disorder.</p>
+                        <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex">
+                            <div class="btn btn-transparent bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
+                                style="transition:0.5s;border: 2px solid white;color: white;font-weight: 500;">Call: 201
+                                835 0536</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 justify-content-center d-flex mt-lg-0 mt-md-0 mt-3">
+                        <img src="../Images/Anxiety-and-depression-Treatment.jpg" class="img-fluid"
+                            style="max-height: 565px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5" style="background-color: #f7f7f7;">
+            <div class="container">
+                <div class="" style="font-size: 35px;">Method for Treatment of anxiety disorder</div>
+                <p style="font-size: 14px;text-align: justify;">The easy method of distinguishing that an anxiety attack
+                    is going overboard
+                    is once without warning many
+                    thoughts to keep the sound in your head. Indulging in therapy for anxiety and depression sessions
+                    might
+                    reduce these negative thoughts and will cause you to relax plenty a lot of. If anxiety attacks
+                    happen,
+                    the paramount way to manage panic attacks on the primary onset is to seek out a quiet spot wherever
+                    you’ll be able to unwind for a jiffy until your heartbeat slows down. Anxiety is commonly manifested
+                    by
+                    a pounding heartbeat; if this happens you wish to specialize in one thing and create yourself relax
+                    till
+                    your recovered your self-control. Regular Therapy for anxiety and depression sessions might simply
+                    bring
+                    you to a state of relaxation.
+                    <br><br>
+                    Another means of controlling panic attacks is to remain active. You may verify that once panic
+                    strikes,
+                    suddenly you’re starting to lose management. Therefore it’s imperative that your mind is preoccupied
+                    with things to do; activities that may keep you busy for a while. {You’ll be able to} clean your
+                    area
+                    otherwise you can watch a pleasant program on the TV. It might simply create your mind shift its
+                    thinking away from those things which will begin the feeling of anxiety.
+                    <br><br>
+                    Another instance is to require deep breaths. This might be easy however this can be an efficient
+                    manner
+                    to manage feelings of anxiety. Take lots of deep breaths and picture someplace that keeps you calm
+                    and
+                    relaxed. This could readily be achieved if you’re having regular sessions along with your therapist.
+                    <br><br>
+                    It is of almost significance that you simply establish the initial occurrence of your anxiety
+                    attacks.
+                    This can be important for you in dealing with it prior to it become worst. There are accessible
+                    medical
+                    remedies alternatives but nothing is a lot of important than knowing how to manage anxiety attacks
+                    at
+                    its early stage though therapy. Repeated anxiety attacks will impinge on someone’s manner of living.
+                    Therefore the earlier it’s controlled the higher. It’s your responsibility to manage it before it
+                    becomes a hindrance. We tend to do feel anxious currently then, however, if the anxiety has ended up
+                    to
+                    be a disorder you may be weighed down with terror and apprehension. Therapy for anxiety and
+                    depression
+                    and a wholesome manner of living will facilitate in reducing your anxiety and permit you to manage
+                    your
+                    own life far better.
+                </p>
+                <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex">
+                    <div class="btn btn-transparent1 bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
+                        style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">Call: 201
+                        835 0536</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5" style="background-color: #74c1bb;">
+            <div class="container">
+                <div class="" style="font-size: 35px;">Anxiety and Depression Treatment Center in New Jersey</div>
+                <p style="font-size: 14px;text-align: justify;">
+                    Do you want to know about anxiety and depression therapist in NJ? Tension, depression, and stress
+                    are major silent killers. Its change people live. The cutthroat competition and also the burning
+                    want to succeed is seriously affecting the lives of the Americans, creating them explore techniques
+                    that may help them in living a healthy and contented life. Therapy can help to eliminate fears and
+                    phobia. Therapy for anxiety brings about calm in the lives of the people; make them feel a lot of
+                    happy and tension free. Therapy for depression brings about Quiet in the lives of people; Make them
+                    feel a successful person. It is very helpful to overcome depression, stress. Here are a number of
+                    explanations why Therapy treatment has become the newest buzzword within American society:
+                    <br><br>
+                    <b>#Therapy for anxiety</b> is all natural and simplest cures for transforming somebody’s life. As
+                    all the issues originate from our minds, using therapy for anxiety we tend to are ready to develop
+                    correct mentality by eliminating negative thoughts, emotions, and memories from our mind that is
+                    inflicting America tension. It provides individuals with a ray of hope even after they feel stuck up
+                    and realizes there’s no way out. This can be achieved by providing positive guidance and proper
+                    counseling once the person is in a very state of trance. If you are searching Anxiety and depression
+                    therapist in New Jersey. You should connect with Stress therapist NJ.
+                    <br><br>
+                    <b>#Therapy for anxiety</b> may be a 3 step method. The primary major step whereas beginning with
+                    therapy is to search out the basic cause of the matter that is inflicting stress and tension.
+                    Finding the matter is half the answer. The second step involves notice the proper therapist or
+                    learning the techniques of self-therapy. For this you wish to know however therapy works and what
+                    are the varied strategies used and might they be practiced at home or does one have to be compelled
+                    to take the therapy for anxiety sessions from a professional. Lastly, one should have faith during
+                    this therapy before starting the sessions. It’s justly said that faith will move mountains, thus
+                    unless and till you’re receptive to the concepts and have believed this therapy you cannot see
+                    tangible benefits.
+                    <br><br>
+                    It changes the approach individuals interprets things in their lives. Experiences in life help in
+                    developing emotions and habits within the person. They associate confusion and pain with sure
+                    individuals and image. It helps in replacing the negative pictures with photos and thoughts which
+                    will be useful to them. Once one or two of sessions, individuals notice a change in their attitude
+                    and additionally, however, they react to the circumstances. If you want to know more about best
+                    <b>Anxiety and depression therapy in New Jersey</b> search on Google.
+                </p>
+                <div class="" style="font-size: 14px;"><b>Benefits of therapy</b>
+                    <li>Probably the most important good thing about therapy is that this can be an especially cheap
+                        therapy with no side effects.</li>
+                    <li>It may be carried out any place for example in a clinic, office, a room etc.</li>
+                    <div class="mt-2">No need to take medicine regularly.</div>
+                </div>
+                <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex my-4">
+                    <div class="btn btn-transparent bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
+                        style="transition:0.5s;border: 2px solid white;color: white;font-weight: 500;">Call: 201
+                        835 0536</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-dark" style="height: 120px;"></div>
+        <div class="" style="min-height: 70px;background-color: #17a2b8;">
+            <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                    <div class="text-lg-start text-md-start text-sm-start text-center">
+                        Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
+                    style="margin-left: auto;">
+                    <div class="d-flex">
+                        <div class="fa fa-facebook-f px-2"></div>
+                        <div class="fa fa-twitter px-2"></div>
+                        <div class="fa fa-google-plus px-2"></div>
+                        <div class="fa fa-linkedin-square px-2"></div>
+                        <div class="fa fa-instagram px-2"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
