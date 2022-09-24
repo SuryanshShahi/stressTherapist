@@ -28,7 +28,6 @@ header {
 }
 .dropdown-content {
   display: none;
-  /* background-color: #eee; */
 }
 
 .dropdown:hover .dropdown-content {
@@ -126,7 +125,7 @@ header {
 }
 @media (max-width: 990px) {
   .navbar li {
-    width: fit-content;
+    width: fit-content !important;
   }
 }
 /* -------------------------------------------------------------------------- */
