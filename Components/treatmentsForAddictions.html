@@ -27,400 +27,449 @@
 
 <body>
 
-
-    <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
-        <div class="container-lg container-fluid">
-            <div class="row my-2" style="font-size: 10px;">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
-                    style="border-right: 1px solid #fff;">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
-                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
-                                AM-8:00 PM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
-                                835
-                                0536</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
-                    <div class="d-flex list-unstyled align-items-center">
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                style="color: grey;"></a>
-                        </div>
-
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
-                                style="color: grey;"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="mt-5" id="loader">
+        <div class="justify-content-center d-flex">
+            <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+            <div id="spinner" class="text-center"></div>
         </div>
-    </nav>
+    </div>
 
-    <header class="position-sticky top-0" id="header" style="z-index: 999;">
-        <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
-            style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+    <section style="display:none;" id="content" class="animate-bottom">
+        <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
             <div class="container-lg container-fluid">
-                <a href="../Home.html" class="navbar-brand" href="#">
-                    <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="fa fa-bars fa-lg"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" style="margin-left: auto;">
-                        <li class=" nav-item px-1">
-                            <a href="./Imran.html" exact class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                ABOUT DR. IMRAN RASID
+                <div class="row my-2" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
+                        style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
+                                WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                    AM-8:00 PM</span>
                             </a>
-                        </li>
-                        <li class="active nav-item px-1 position-relative">
-                            <a href="#" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-5" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./stressReduction.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Therapist for Stress
-                                                        Reduction</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./treatmentsForAddictions.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Treatment for addictions
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item px-1 position-relative">
-                            <a href="./services.html" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                SERVICES&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-5" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./adult.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="dropdown" style="width: 100%;">
-                                                        Adult
-                                                        <a href="./PTSD.html" style="color: #444;"
-                                                            class="text-decoration-none">
-                                                            <div class="dropdown-content py-2 my-2"
-                                                                style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
-                                                                Post-traumatic Stress Disorder (PTSD) <div
-                                                                    class="fa fa-angle-left px-3"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./eliminateFearsAndPhobias.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Eliminate Fears & Phobias
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./stressAndAnxietytreatment.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Stress and Anxiety
-                                                        Treatment
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./addictionTreatment.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Addiction Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./anxietyAndDepressionTreatment.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Anxiety & Depression
-                                                        Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./mentalHealth.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Mental Health & Addiction
-                                                        Therapies</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./testimonials.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                TESTIMONIALS
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./blog.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                BLOG
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./contact.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                CONTACT US
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
-                            style="border-right: 1px solid #fff;">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="./bookAVisit.html" class="text-decoration-none px-2 active"
-                                    style="color: grey;">
-                                    WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT
-                                        8:00
-                                        AM-8:00 PM</span>
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span
-                                    class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
-                                    style="color: grey;">
-                                    EMAIL: <span
-                                        style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                style="color: grey;">
+                                EMAIL: <span
+                                    style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                                    PHONE: <span style="font-weight: 500;color: black;"
-                                        style="color: black;">&nbsp;&nbsp;201
-                                        835
-                                        0536</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                PHONE: <span style="font-weight: 500;color: black;"
+                                    style="color: black;">&nbsp;&nbsp;201
+                                    835
+                                    0536</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
-                            <div class="d-flex list-unstyled align-items-center">
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                        style="color: grey;"></a>
-                                </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
+                        <div class="d-flex list-unstyled align-items-center">
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
 
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
-                                        style="color: grey;"></a>
-                                </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <section>
-        <div class="container pb-5 pt-lg-5 pt-md-5 pt-sm-5 pt-2"
-            style="text-align: justify;font-size: 14px;color: #444;">
-            <div class="mb-3" style="font-size: 60px;font-weight:500;color: black;">Treatments for addictions by Therapy
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-12">
-                    <p>Are you looking for Therapy for addictions and Treatments for
-                        addictions?
-                        Drug and alcohol will become a nightmare for the addict and people around him. It is often very
-                        simple to slip into drugs habits however very difficult to get out. Now a day’s it is considered
-                        to
-                        be the illness of the brain that causes many issues to the addicts. Numerous kind treatments for
-                        addictions facilities are provided to return out of the dependency. A lot of modern types of
-                        treatment are offered that are based on the analysis. There are no specific rules for the
-                        treatments
-                        for addictions, as typically it all depends upon the individual’s demand. Every kind of healing
-                        procedure is followed like drug and activity therapy and these procedures are quite effective
-                        for
-                        the addicts. People that are affected by any kind of drugs habit will find hope for a new life
-                        in a
-                        center for treatment. A drug could be a progressive neurological disorder which needs clinical
-                        treatment. The only method for addicts to realize long-term sobriety is through holistic
-                        treatment
-                        programs that address the physiological, mental, and religious aspects of drugs. A number of the
-                        foremost well-tried techniques for treating are referred to as “evidence-based therapies” due to
-                        their rigorous testing and government approval. These methods include individual counseling
-                        sessions, psychotherapy, and group therapy. Overall, these therapies are designed to show
-                        addicts
-                        coping mechanisms for dealing with future cravings.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 justify-content-center d-flex">
-                    <img src="../Images/treatment-for-addictions.jpeg" class="img-fluid"
-                        style="box-shadow: 1px 1px 2px 1px grey;width: 100%;max-width: 370px;max-height: 250px;" />
-                </div>
-            </div>
-            <p class="mt-4">There are 2 main parts of cognitive-behavioral therapy for addictions: analysis and response
-                coaching. Throughout the analysis phase of this therapy, clinicians help patients discover a number of
-                the root causes of their drug use. Addicts learn to acknowledge the thoughts and feelings they expertise
-                after they crave medicine.
+        <header class="position-sticky top-0" id="header" style="z-index: 999;">
+            <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+                style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+                <div class="container-lg container-fluid">
+                    <a href="../Home.html" class="navbar-brand" href="#">
+                        <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="margin-left: auto;">
+                            <li class=" nav-item px-1">
+                                <a href="./Imran.html" exact class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    ABOUT DR. IMRAN RASID
+                                </a>
+                            </li>
+                            <li class="active nav-item px-1 position-relative">
+                                <a href="#" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-5" style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./stressReduction.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Therapist for Stress
+                                                            Reduction</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./treatmentsForAddictions.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Treatment for
+                                                            addictions
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
-                For example, some alcoholics could come back to realize that they impetuously drink whenever they become
-                nervous or frightened. On the opposite hand, individuals addicted to the hard drug, meth, or different
-                stimulants could notice that top workloads and feelings of anxiety drive them to use medicine. Overall,
-                learning concerning these drug-associated feelings is crucial for addicts to develop effective
-                mechanisms for dealing with cravings. By distinguishing dangerous emotions, they will then learn to
-                suppose through their issues and alter their mental states in healthier ways.
+                            <li class="nav-item px-1 position-relative">
+                                <a href="./services.html" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-5" style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./adult.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="dropdown" style="width: 100%;">
+                                                            Adult
+                                                            <a href="./PTSD.html" style="color: #444;"
+                                                                class="text-decoration-none">
+                                                                <div class="dropdown-content py-2 my-2"
+                                                                    style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
+                                                                    Post-traumatic Stress Disorder (PTSD) <div
+                                                                        class="fa fa-angle-left px-3"></div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./eliminateFearsAndPhobias.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Eliminate Fears &
+                                                            Phobias
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./stressAndAnxietytreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Stress and Anxiety
+                                                            Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./addictionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Addiction Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./anxietyAndDepressionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Anxiety & Depression
+                                                            Treatment</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./mentalHealth.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Mental Health &
+                                                            Addiction
+                                                            Therapies</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./testimonials.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    TESTIMONIALS
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./blog.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    BLOG
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./contact.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
+                                style="border-right: 1px solid #fff;">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="./bookAVisit.html" class="text-decoration-none px-2 active"
+                                        style="color: grey;">
+                                        WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON -
+                                            SAT
+                                            8:00
+                                            AM-8:00 PM</span>
+                                    </a>
+                                </div>
+                            </div>
 
-                Addicts learn these coping mechanisms throughout response coaching. When distinguishing the emotions
-                that trigger their drug use, patients learn healthy ways in which to proactively stop negative feelings
-                and react productively after they occur.
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                        style="color: grey;">
+                                        EMAIL: <span
+                                            style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                                    </a>
+                                </div>
+                            </div>
 
-                For instance, people who usually use marijuana once stressed would possibly learn to instead deal with
-                their stress through meditation or objective analysis of their issues. They could also learn to avoid
-                stressors within the initial place by analyzing the areas in their life that most frequently lead to
-                depressive thoughts and feelings. Negative relationships, co-occurring mental sicknesses, and financial
-                difficulties are issues that addicts will address throughout cognitive behavioral medical aid.
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                        PHONE: <span style="font-weight: 500;color: black;"
+                                            style="color: black;">&nbsp;&nbsp;201
+                                            835
+                                            0536</span>
+                                    </a>
+                                </div>
+                            </div>
 
-                Like most different treatments for additions strategies – and just like the illness of addictions itself
-                – cognitive behavioral therapy is progressive. It needs consistent effort from rehab patients and
-                clinicians alike and is often only one element of the many during comprehensive Treatments for
-                addictions program. Though residential inpatient programs are the foremost concerned and only at
-                treating severe cases of addiction, patients will receive this therapy throughout partial
-                hospitalization and patient treatment, as well.</p>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
+                                <div class="d-flex list-unstyled align-items-center">
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank"
+                                            class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                            style="color: grey;"></a>
+                                    </div>
 
-            <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex">
-                <a href="tel:201 835 0536">
-                    <div class="btn btn-transparent bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
-                        style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">Call: 201
-                        835 0536</div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div id="backtotop" class="container-fluid" style="bottom: 0;">
-        <div class="justify-content-end d-flex" onclick="back()">
-            <div
-                class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="bg-dark" style="height: 120px;"></div>
-        <div class="" style="min-height: 70px;background-color: #17a2b8;">
-            <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                    <div class="text-lg-start text-md-start text-sm-start text-center">
-                        Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
+                                            style="color: grey;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
-                    style="margin-left: auto;">
-                    <div class="d-flex">
-                        <div class="fa fa-facebook-f px-2"></div>
-                        <div class="fa fa-twitter px-2"></div>
-                        <div class="fa fa-google-plus px-2"></div>
-                        <div class="fa fa-linkedin-square px-2"></div>
-                        <div class="fa fa-instagram px-2"></div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="container pb-5 pt-lg-5 pt-md-5 pt-sm-5 pt-2"
+                style="text-align: justify;font-size: 14px;color: #444;">
+                <div class="mb-3" style="font-size: 60px;font-weight:500;color: black;">Treatments for addictions by
+                    Therapy
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <p>Are you looking for Therapy for addictions and Treatments for
+                            addictions?
+                            Drug and alcohol will become a nightmare for the addict and people around him. It is often
+                            very
+                            simple to slip into drugs habits however very difficult to get out. Now a day’s it is
+                            considered
+                            to
+                            be the illness of the brain that causes many issues to the addicts. Numerous kind treatments
+                            for
+                            addictions facilities are provided to return out of the dependency. A lot of modern types of
+                            treatment are offered that are based on the analysis. There are no specific rules for the
+                            treatments
+                            for addictions, as typically it all depends upon the individual’s demand. Every kind of
+                            healing
+                            procedure is followed like drug and activity therapy and these procedures are quite
+                            effective
+                            for
+                            the addicts. People that are affected by any kind of drugs habit will find hope for a new
+                            life
+                            in a
+                            center for treatment. A drug could be a progressive neurological disorder which needs
+                            clinical
+                            treatment. The only method for addicts to realize long-term sobriety is through holistic
+                            treatment
+                            programs that address the physiological, mental, and religious aspects of drugs. A number of
+                            the
+                            foremost well-tried techniques for treating are referred to as “evidence-based therapies”
+                            due to
+                            their rigorous testing and government approval. These methods include individual counseling
+                            sessions, psychotherapy, and group therapy. Overall, these therapies are designed to show
+                            addicts
+                            coping mechanisms for dealing with future cravings.</p>
                     </div>
+                    <div class="col-lg-4 col-md-4 col-12 justify-content-center d-flex">
+                        <img src="../Images/treatment-for-addictions.jpeg" class="img-fluid"
+                            style="box-shadow: 1px 1px 2px 1px grey;width: 100%;max-width: 370px;max-height: 250px;" />
+                    </div>
+                </div>
+                <p class="mt-4">There are 2 main parts of cognitive-behavioral therapy for addictions: analysis and
+                    response
+                    coaching. Throughout the analysis phase of this therapy, clinicians help patients discover a number
+                    of
+                    the root causes of their drug use. Addicts learn to acknowledge the thoughts and feelings they
+                    expertise
+                    after they crave medicine.
+
+                    For example, some alcoholics could come back to realize that they impetuously drink whenever they
+                    become
+                    nervous or frightened. On the opposite hand, individuals addicted to the hard drug, meth, or
+                    different
+                    stimulants could notice that top workloads and feelings of anxiety drive them to use medicine.
+                    Overall,
+                    learning concerning these drug-associated feelings is crucial for addicts to develop effective
+                    mechanisms for dealing with cravings. By distinguishing dangerous emotions, they will then learn to
+                    suppose through their issues and alter their mental states in healthier ways.
+
+                    Addicts learn these coping mechanisms throughout response coaching. When distinguishing the emotions
+                    that trigger their drug use, patients learn healthy ways in which to proactively stop negative
+                    feelings
+                    and react productively after they occur.
+
+                    For instance, people who usually use marijuana once stressed would possibly learn to instead deal
+                    with
+                    their stress through meditation or objective analysis of their issues. They could also learn to
+                    avoid
+                    stressors within the initial place by analyzing the areas in their life that most frequently lead to
+                    depressive thoughts and feelings. Negative relationships, co-occurring mental sicknesses, and
+                    financial
+                    difficulties are issues that addicts will address throughout cognitive behavioral medical aid.
+
+                    Like most different treatments for additions strategies – and just like the illness of addictions
+                    itself
+                    – cognitive behavioral therapy is progressive. It needs consistent effort from rehab patients and
+                    clinicians alike and is often only one element of the many during comprehensive Treatments for
+                    addictions program. Though residential inpatient programs are the foremost concerned and only at
+                    treating severe cases of addiction, patients will receive this therapy throughout partial
+                    hospitalization and patient treatment, as well.</p>
+
+                <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex">
+                    <a href="tel:201 835 0536">
+                        <div class="btn btn-transparent bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
+                            style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">Call: 201
+                            835 0536</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="backtotop" class="container-fluid" style="bottom: 0;">
+            <div class="justify-content-end d-flex" onclick="back()">
+                <div
+                    class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="bg-dark" style="height: 120px;"></div>
+            <div class="" style="min-height: 70px;background-color: #17a2b8;">
+                <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                        <div class="text-lg-start text-md-start text-sm-start text-center">
+                            Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT |
+                            Privacy
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
+                        style="margin-left: auto;">
+                        <div class="d-flex">
+                            <div class="fa fa-facebook-f px-2"></div>
+                            <div class="fa fa-twitter px-2"></div>
+                            <div class="fa fa-google-plus px-2"></div>
+                            <div class="fa fa-linkedin-square px-2"></div>
+                            <div class="fa fa-instagram px-2"></div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
+        </footer>
+        <div class="mt-5" id="loader">
+            <div class="justify-content-center d-flex">
+                <img src="./Images/Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+                <div id="spinner" class="text-center"></div>
+            </div>
         </div>
-    </footer>
+
+        <section style="display:none;" id="content" class="animate-bottom">
 </body>
 
 </html>

@@ -8,14 +8,25 @@ const changeBackground = () => {
   if (window.scrollY >= 100) {
     if (x.classList == "active") {
       x.classList.remove("active");
-      y.style.display ="none";
+      y.style.display = "none";
     } else {
       x.classList.add("active");
-      y.style.display ="block";
+      y.style.display = "block";
     }
   } else {
     x.classList.remove("active");
-    y.style.display ="none";
+    y.style.display = "none";
   }
 };
 window.addEventListener("scroll", changeBackground);
+
+var x;
+
+function myFunction() {
+  x = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("content").style.display = "block";
+}

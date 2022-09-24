@@ -25,645 +25,692 @@
 </style>
 
 <body>
-
-    <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
-        <div class="container-lg container-fluid">
-            <div class="row my-2" style="font-size: 10px;">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
-                    style="border-right: 1px solid #fff;">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
-                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
-                                AM-8:00 PM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
-                                835
-                                0536</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
-                    <div class="d-flex list-unstyled align-items-center">
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                style="color: grey;"></a>
-                        </div>
-
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
-                                style="color: grey;"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="mt-5" id="loader">
+        <div class="justify-content-center d-flex">
+            <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+            <div id="spinner" class="text-center"></div>
         </div>
-    </nav>
+    </div>
 
-    <header class="position-sticky top-0" id="header" style="z-index: 999;">
-        <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
-            style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+    <section style="display:none;" id="content" class="animate-bottom">
+        <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
             <div class="container-lg container-fluid">
-                <a href="../Home.html" class="navbar-brand" href="#">
-                    <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="fa fa-bars fa-lg"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" style="margin-left: auto;">
-                        <li class=" nav-item px-1">
-                            <a href="./Imran.html" exact class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                ABOUT DR. IMRAN RASID
+                <div class="row my-2" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
+                        style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
+                                WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                    AM-8:00 PM</span>
                             </a>
-                        </li>
-                        <li class="nav-item px-1 position-relative">
-                            <a href="#" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-4" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./stressReduction.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Therapist for Stress
-                                                        Reduction</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./treatmentsForAddictions.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Treatment for addictions
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="active nav-item px-1 position-relative">
-                            <a href="./services.html" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                SERVICES&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-4" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./adult.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="dropdown" style="width: 100%;">
-                                                        Adult
-                                                        <a href="./PTSD.html" style="color: #444;"
-                                                            class="text-decoration-none">
-                                                            <div class="dropdown-content py-2 my-2"
-                                                                style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
-                                                                Post-traumatic Stress Disorder (PTSD) <div
-                                                                    class="fa fa-angle-left px-3"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./eliminateFearsAndPhobias.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Eliminate Fears & Phobias
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./stressAndAnxietytreatment.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Stress and Anxiety
-                                                        Treatment
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./addictionTreatment.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Addiction Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./anxietyAndDepressionTreatment.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Anxiety & Depression
-                                                        Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./mentalHealth.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Mental Health & Addiction
-                                                        Therapies</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./testimonials.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                TESTIMONIALS
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./blog.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                BLOG
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./contact.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                CONTACT US
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
-                            style="border-right: 1px solid #fff;">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="./bookAVisit.html" class="text-decoration-none px-2 active"
-                                    style="color: grey;">
-                                    WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT
-                                        8:00
-                                        AM-8:00 PM</span>
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span
-                                    class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                                    EMAIL: <span
-                                        style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                style="color: grey;">
+                                EMAIL: <span
+                                    style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                                    PHONE: <span style="font-weight: 500;color: black;"
-                                        style="color: black;">&nbsp;&nbsp;201
-                                        835
-                                        0536</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                PHONE: <span style="font-weight: 500;color: black;"
+                                    style="color: black;">&nbsp;&nbsp;201
+                                    835
+                                    0536</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
-                            <div class="d-flex list-unstyled align-items-center">
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                        style="color: grey;"></a>
-                                </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
+                        <div class="d-flex list-unstyled align-items-center">
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
 
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
-                                        style="color: grey;"></a>
-                                </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <section>
-        <div class="row gx-0">
-            <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/pain.jpg" class="img-fluid" style="width: 100%;height:100%;" />
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
-                style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
-                <div>
-                    <div style="font-size: 60px;">Services Offered</div>
-                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <ul class="list-unstyled">
-                        <li>o Pain (Migraine, Fibromyalgia, Arthritis, Burns, Backache etc.)</li>
-                        <li>o Stress and Anxiety</li>
-                        <li>o Smoking cessation</li>
-                        <li>o Fear</li>
-                        <li>o Sleep problems</li>
-                        <li>o Acne vulgaris</li>
-                        <li>o IBS (Irritable bowel syndrome)</li>
-                        <li>o Nail biting</li>
-                        <li>o Hair pulling</li>
-                        <li>o Gastric ulcers</li>
-                        <li>o Addictions</li>
-                        And many more……
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
-                style="background-color: rgba(191, 222, 217, 1);font-size: 20px;color: black;">
-                <div>
-                    <div style="font-size: 60px;">Pain</div>
-                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:black" />
-                    <p style="font-size: 14px;text-align:justify">Pain is an indication that something is going wrong,
-                        thereby drawing your attention towards taking action. For example, when a nerve is injured or
-                        compressed, it sends pain signals to our awareness a means of protection. This can produce a
-                        variety of unpleasant sensations. The fact that we can differentiate types of pain is indicative
-                        of the intelligence of our body and it’s natural desire to self-correct. Damaged or injured
-                        nerves can also produce odd sensitivities to a range of temperatures and, touch.
-                        <br><br>
-                        In fact, just visiting the doctor or hospital often causes a great deal of anxiety and stress.
-                        <br><br>
-                        During my clinical setting, I have seen over 2000 patients with a wide spectrum of pain
-                        following stress, ranging from acute to chronic. In almost every case I have seen them find
-                        relief and ways to improve their daily lives. I have proven tips and a broad assortment of
-                        therapeutic modalities that definitely helps people to be more comfortable and mobile easily.
-                    </p>
-                    <div class="py-3 justify-content-center d-flex">
-                        <div>
-                            <ul class="nav nav-tabs justify-content-center mb-4"
-                                style="border-bottom: none;font-size: 20px;">
-                                <li style="font-size: 16px;" class="active text-center px-3">
-                                    <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
-                                        data-bs-toggle="tab" href="#causes">
-                                        1.1 CAUSES OF PAIN
-                                    </div>
-                                </li>
-                                <li class="text-center px-3" style="font-size: 16px;">
-                                    <div class="py-2 tab rounded-0 text-decoration-none" type="button"
-                                        data-bs-toggle="tab" href="#symptoms">
-                                        1.2 SYMPTOMS OF PAIN
-                                    </div>
-                                </li>
-                                <li class="text-center px-3" style="font-size: 16px;">
-                                    <div class="py-2 tab rounded-0 text-decoration-none" type="button"
-                                        data-bs-toggle="tab" href="#types">
-                                        1.3 TYPES OF PAIN
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="tab-content" style="font-size: 14px;">
-                                <div id="causes" class="active tab-pane">
-                                    Pain can be caused by either
-                                    <ul class="" style="font-size: 18px;">
-
-                                        <li>Physical (Pathological) trauma</li>
-                                        <li>Psychological trauma<br>It doesn’t matter what nature is, it is
-                                            interlinked with each other in such a way that it can lead from a mild
-                                            discomfort up to the discomfort of a greater extent. More precisely pain
-                                            can cause stress and stress can worsen pain.</li>
-                                        <li>It is not only physically debilitating, but it can also cause all sorts
-                                            of other side effects like depression, broken relationships,
-                                            alienations, chronic pain, all of which can ruin your life.</li>
-                                    </ul>
-
-                                </div>
-                                <div id="symptoms" class="tab-pane fade">
-                                    There are a lot of signs and symptoms that can be experienced. These sign and
-                                    symptoms can be one or more of the following
-                                    <div class="row mt-2">
-                                        <div class="col-6">
-                                            <ul class="" style="font-size: 18px;">
-                                                <li>Numbness</li>
-                                                <li>Tingling</li>
-                                                <li>Burning</li>
-                                                <li>Searing</li>
-                                                <li>Piercing</li>
-                                                <li>Aching</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-6">
-                                            <ul class="" style="font-size: 18px;">
-                                                <li>Sharp</li>
-                                                <li>Dull</li>
-                                                <li>Throbbing</li>
-                                                <li>Pins and Needles</li>
-                                                <li>Tightness</li>
-                                                <li>Pressure and Pulling</li>
+        <header class="position-sticky top-0" id="header" style="z-index: 999;">
+            <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+                style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+                <div class="container-lg container-fluid">
+                    <a href="../Home.html" class="navbar-brand" href="#">
+                        <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="margin-left: auto;">
+                            <li class=" nav-item px-1">
+                                <a href="./Imran.html" exact class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    ABOUT DR. IMRAN RASID
+                                </a>
+                            </li>
+                            <li class="nav-item px-1 position-relative">
+                                <a href="#" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-4" style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./stressReduction.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Therapist for Stress
+                                                            Reduction</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./treatmentsForAddictions.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Treatment for
+                                                            addictions
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="types" class="tab-pane fade">
-                                    <div class="row mt-2">
-                                        <div class="col-6">
-                                            <ul class="" style="font-size: 18px;">
-                                                <li>Back pain</li>
-                                                <li>Neck pain</li>
-                                                <li>Hip and Joint pain</li>
-                                                <li>Tendonitis</li>
-                                                <li>Chronic pain</li>
+                            </li>
+
+                            <li class="active nav-item px-1 position-relative">
+                                <a href="./services.html" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-4" style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./adult.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="dropdown" style="width: 100%;">
+                                                            Adult
+                                                            <a href="./PTSD.html" style="color: #444;"
+                                                                class="text-decoration-none">
+                                                                <div class="dropdown-content py-2 my-2"
+                                                                    style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
+                                                                    Post-traumatic Stress Disorder (PTSD) <div
+                                                                        class="fa fa-angle-left px-3"></div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./eliminateFearsAndPhobias.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Eliminate Fears &
+                                                            Phobias
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./stressAndAnxietytreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Stress and Anxiety
+                                                            Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./addictionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Addiction Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./anxietyAndDepressionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Anxiety & Depression
+                                                            Treatment</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./mentalHealth.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Mental Health &
+                                                            Addiction
+                                                            Therapies</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
                                             </ul>
                                         </div>
-                                        <div class="col-6">
-                                            <ul class="" style="font-size: 18px;">
-                                                <li>Shoulder pain</li>
-                                                <li>Muscular pain</li>
-                                                <li>Migraine</li>
-                                                <li>Pain from cancer</li>
-                                            </ul>
-                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./testimonials.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    TESTIMONIALS
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./blog.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    BLOG
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./contact.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
+                                style="border-right: 1px solid #fff;">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="./bookAVisit.html" class="text-decoration-none px-2 active"
+                                        style="color: grey;">
+                                        WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON -
+                                            SAT
+                                            8:00
+                                            AM-8:00 PM</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                        style="color: grey;">
+                                        EMAIL: <span
+                                            style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                        PHONE: <span style="font-weight: 500;color: black;"
+                                            style="color: black;">&nbsp;&nbsp;201
+                                            835
+                                            0536</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
+                                <div class="d-flex list-unstyled align-items-center">
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank"
+                                            class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                            style="color: grey;"></a>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
+                                            style="color: grey;"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/LAT.jpg" class="img-fluid" style="width: 100%;height:100%;" />
-            </div>
+            </nav>
+        </header>
 
-
-
-            <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/stressAndAnxietytreatment.jpg" class="img-fluid" style="width: 100%;height:100%;" />
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
-                style="background-color:#1d9390;font-size: 20px;color: white;">
-                <div>
-                    <div style="font-size: 60px;">Stress</div>
-                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <p style="font-size: 14px;text-align:justify">Undoubtedly about 75% to 90% of all clinical visits
-                        are for illness induced by stress. It is a fact that our persistent thoughts spring forth from
-                        our unconscious mind. These are the thoughts that we find ourselves automatically tangled in, in
-                        our daily life. If the persistent thoughts that keep popping into our conscious level are all
-                        about problems concerning past or present, then we definitely increase our stress and anxiety.
-                        Since different modalities of therapeutical tool can be used to change unconscious thoughts and
-                        take control over the sub-conscious mind the right stress relief therapy can effectively
-                        eliminate negative stress from our system and bring us into a state of deep relaxation.
-                    </p>
+        <section>
+            <div class="row gx-0">
+                <div class="col-lg-6 col-md-6 col-12 gx-0">
+                    <img src="../Images/pain.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
+                    style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
                     <div>
-                        <div class="" style="font-weight: 500;font-size: 14px;">2.1 CAUSES OF STRESS</div>
-                        <p style="font-size: 14px;text-align:justify">Life is full of ups and downs, so both positive
+                        <div style="font-size: 60px;">Services Offered</div>
+                        <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
+                        <ul class="list-unstyled">
+                            <li>o Pain (Migraine, Fibromyalgia, Arthritis, Burns, Backache etc.)</li>
+                            <li>o Stress and Anxiety</li>
+                            <li>o Smoking cessation</li>
+                            <li>o Fear</li>
+                            <li>o Sleep problems</li>
+                            <li>o Acne vulgaris</li>
+                            <li>o IBS (Irritable bowel syndrome)</li>
+                            <li>o Nail biting</li>
+                            <li>o Hair pulling</li>
+                            <li>o Gastric ulcers</li>
+                            <li>o Addictions</li>
+                            And many more……
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
+                    style="background-color: rgba(191, 222, 217, 1);font-size: 20px;color: black;">
+                    <div>
+                        <div style="font-size: 60px;">Pain</div>
+                        <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:black" />
+                        <p style="font-size: 14px;text-align:justify">Pain is an indication that something is going
+                            wrong,
+                            thereby drawing your attention towards taking action. For example, when a nerve is injured
+                            or
+                            compressed, it sends pain signals to our awareness a means of protection. This can produce a
+                            variety of unpleasant sensations. The fact that we can differentiate types of pain is
+                            indicative
+                            of the intelligence of our body and it’s natural desire to self-correct. Damaged or injured
+                            nerves can also produce odd sensitivities to a range of temperatures and, touch.
+                            <br><br>
+                            In fact, just visiting the doctor or hospital often causes a great deal of anxiety and
+                            stress.
+                            <br><br>
+                            During my clinical setting, I have seen over 2000 patients with a wide spectrum of pain
+                            following stress, ranging from acute to chronic. In almost every case I have seen them find
+                            relief and ways to improve their daily lives. I have proven tips and a broad assortment of
+                            therapeutic modalities that definitely helps people to be more comfortable and mobile
+                            easily.
+                        </p>
+                        <div class="py-3 justify-content-center d-flex">
+                            <div>
+                                <ul class="nav nav-tabs justify-content-center mb-4"
+                                    style="border-bottom: none;font-size: 20px;">
+                                    <li style="font-size: 16px;" class="active text-center px-3">
+                                        <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#causes">
+                                            1.1 CAUSES OF PAIN
+                                        </div>
+                                    </li>
+                                    <li class="text-center px-3" style="font-size: 16px;">
+                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#symptoms">
+                                            1.2 SYMPTOMS OF PAIN
+                                        </div>
+                                    </li>
+                                    <li class="text-center px-3" style="font-size: 16px;">
+                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#types">
+                                            1.3 TYPES OF PAIN
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" style="font-size: 14px;">
+                                    <div id="causes" class="active tab-pane">
+                                        Pain can be caused by either
+                                        <ul class="" style="font-size: 18px;">
+
+                                            <li>Physical (Pathological) trauma</li>
+                                            <li>Psychological trauma<br>It doesn’t matter what nature is, it is
+                                                interlinked with each other in such a way that it can lead from a mild
+                                                discomfort up to the discomfort of a greater extent. More precisely pain
+                                                can cause stress and stress can worsen pain.</li>
+                                            <li>It is not only physically debilitating, but it can also cause all sorts
+                                                of other side effects like depression, broken relationships,
+                                                alienations, chronic pain, all of which can ruin your life.</li>
+                                        </ul>
+
+                                    </div>
+                                    <div id="symptoms" class="tab-pane fade">
+                                        There are a lot of signs and symptoms that can be experienced. These sign and
+                                        symptoms can be one or more of the following
+                                        <div class="row mt-2">
+                                            <div class="col-6">
+                                                <ul class="" style="font-size: 18px;">
+                                                    <li>Numbness</li>
+                                                    <li>Tingling</li>
+                                                    <li>Burning</li>
+                                                    <li>Searing</li>
+                                                    <li>Piercing</li>
+                                                    <li>Aching</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <ul class="" style="font-size: 18px;">
+                                                    <li>Sharp</li>
+                                                    <li>Dull</li>
+                                                    <li>Throbbing</li>
+                                                    <li>Pins and Needles</li>
+                                                    <li>Tightness</li>
+                                                    <li>Pressure and Pulling</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="types" class="tab-pane fade">
+                                        <div class="row mt-2">
+                                            <div class="col-6">
+                                                <ul class="" style="font-size: 18px;">
+                                                    <li>Back pain</li>
+                                                    <li>Neck pain</li>
+                                                    <li>Hip and Joint pain</li>
+                                                    <li>Tendonitis</li>
+                                                    <li>Chronic pain</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <ul class="" style="font-size: 18px;">
+                                                    <li>Shoulder pain</li>
+                                                    <li>Muscular pain</li>
+                                                    <li>Migraine</li>
+                                                    <li>Pain from cancer</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 gx-0">
+                    <img src="../Images/LAT.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+                </div>
+
+
+
+                <div class="col-lg-6 col-md-6 col-12 gx-0">
+                    <img src="../Images/stressAndAnxietytreatment.jpg" class="img-fluid"
+                        style="width: 100%;height:100%;" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
+                    style="background-color:#1d9390;font-size: 20px;color: white;">
+                    <div>
+                        <div style="font-size: 60px;">Stress</div>
+                        <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
+                        <p style="font-size: 14px;text-align:justify">Undoubtedly about 75% to 90% of all clinical
+                            visits
+                            are for illness induced by stress. It is a fact that our persistent thoughts spring forth
+                            from
+                            our unconscious mind. These are the thoughts that we find ourselves automatically tangled
+                            in, in
+                            our daily life. If the persistent thoughts that keep popping into our conscious level are
+                            all
+                            about problems concerning past or present, then we definitely increase our stress and
+                            anxiety.
+                            Since different modalities of therapeutical tool can be used to change unconscious thoughts
                             and
-                            negative event’s in one’s life can be stressful. However major life changes are the greatest
-                            contributors of stress for most people. No doubt they place the greatest demands on
-                            resources
-                            for coping.</p>
+                            take control over the sub-conscious mind the right stress relief therapy can effectively
+                            eliminate negative stress from our system and bring us into a state of deep relaxation.
+                        </p>
+                        <div>
+                            <div class="" style="font-weight: 500;font-size: 14px;">2.1 CAUSES OF STRESS</div>
+                            <p style="font-size: 14px;text-align:justify">Life is full of ups and downs, so both
+                                positive
+                                and
+                                negative event’s in one’s life can be stressful. However major life changes are the
+                                greatest
+                                contributors of stress for most people. No doubt they place the greatest demands on
+                                resources
+                                for coping.</p>
 
-                        <div class="" style="font-weight: 500;font-size: 14px;"> 2.2 SYMPTOMS OF STRESS</div>
-                        <p style="text-align: justify;font-size: 14px;">There are a lot of signs and symptoms that can
-                            be experienced. These sign and symptoms are grouped in four categories – Feelings, Thoughts,
-                            Behavior and Physiology.</p>
-                        <div class="py-3 justify-content-center d-flex">
-                            <div>
-                                <ul class="nav nav-tabs justify-content-center mb-4"
-                                    style="border-bottom: none;font-size: 20px;">
-                                    <li style="font-size: 16px;" class="active text-center px-3">
-                                        <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
-                                            data-bs-toggle="tab" href="#Feeling">
-                                            2.2.1 FEELINGS
-                                        </div>
-                                    </li>
-                                    <li class="text-center px-3" style="font-size: 16px;">
-                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
-                                            data-bs-toggle="tab" href="#Thoughts">
-                                            2.2.2 THOUGHTS
-                                        </div>
-                                    </li>
-                                    <li class="text-center px-3" style="font-size: 16px;">
-                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
-                                            data-bs-toggle="tab" href="#Behavior">
-                                            2.2.3 BEHAVIOR
-                                        </div>
-                                    </li>
-                                    <li class="text-center px-3" style="font-size: 16px;">
-                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
-                                            data-bs-toggle="tab" href="#Physiology">
-                                            2.2.4 PHYSIOLOGY
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="Feeling" class="active tab-pane">
-                                        <ul class="" style="font-size: 18px;">
-                                            <li>Feeling angry</li>
-                                            <li>Feeling moody</li>
-                                            <li>Feeling scared</li>
-                                            <li>Feeling irritable</li>
-                                        </ul>
+                            <div class="" style="font-weight: 500;font-size: 14px;"> 2.2 SYMPTOMS OF STRESS</div>
+                            <p style="text-align: justify;font-size: 14px;">There are a lot of signs and symptoms that
+                                can
+                                be experienced. These sign and symptoms are grouped in four categories – Feelings,
+                                Thoughts,
+                                Behavior and Physiology.</p>
+                            <div class="py-3 justify-content-center d-flex">
+                                <div>
+                                    <ul class="nav nav-tabs justify-content-center mb-4"
+                                        style="border-bottom: none;font-size: 20px;">
+                                        <li style="font-size: 16px;" class="active text-center px-3">
+                                            <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
+                                                data-bs-toggle="tab" href="#Feeling">
+                                                2.2.1 FEELINGS
+                                            </div>
+                                        </li>
+                                        <li class="text-center px-3" style="font-size: 16px;">
+                                            <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                                data-bs-toggle="tab" href="#Thoughts">
+                                                2.2.2 THOUGHTS
+                                            </div>
+                                        </li>
+                                        <li class="text-center px-3" style="font-size: 16px;">
+                                            <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                                data-bs-toggle="tab" href="#Behavior">
+                                                2.2.3 BEHAVIOR
+                                            </div>
+                                        </li>
+                                        <li class="text-center px-3" style="font-size: 16px;">
+                                            <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                                data-bs-toggle="tab" href="#Physiology">
+                                                2.2.4 PHYSIOLOGY
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="Feeling" class="active tab-pane">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Feeling angry</li>
+                                                <li>Feeling moody</li>
+                                                <li>Feeling scared</li>
+                                                <li>Feeling irritable</li>
+                                            </ul>
 
-                                    </div>
-                                    <div id="Thoughts" class="tab-pane fade">
-                                        <ul class="" style="font-size: 18px;">
-                                            <li>Embarrassing easily</li>
-                                            <li>Low self esteem</li>
-                                            <li>Fear of failure</li>
-                                            <li>Loss of memory</li>
-                                            <li>Preoccupied with thoughts</li>
-                                            <li>Worrying about the future</li>
-                                            <li>Lack of concentration</li>
-                                        </ul>
-                                    </div>
-                                    <div id="Behavior" class="tab-pane fade">
-                                        <ul class="" style="font-size: 18px;">
-                                            <li>Sturring and other speak difficulties</li>
-                                            <li>Crying with reason</li>
-                                            <li>Acting impulsively</li>
-                                            <li>Starling easily</li>
-                                            <li>Laughing in a high pitch</li>
-                                            <li>Grindling teeth especially at night</li>
-                                            <li>Lack of appetite or overeating</li>
-                                            <li>Increasing use of drug and alcohol</li>
-                                            <li>Increasing smoking</li>
-                                        </ul>
-                                    </div>
-                                    <div id="Physiology" class="tab-pane fade">
-                                        <ul class="" style="font-size: 18px;">
-                                            <li>Sweating in the hands or feet</li>
-                                            <li>Increased heart beat or palpitation, Headaches</li>
-                                            <li>Tremor or shaking</li>
-                                            <li>Nervous ticks</li>
-                                            <li>Dryness of mouth, Premenstrual tension</li>
-                                            <li>Feeling weakness, Muscular pain</li>
-                                            <li>Urinating frequently</li>
-                                            <li>Disturb sleep, Diarrhea, Indigestion or Vomiting</li>
-                                            <li>Butterflies in the stomach, Susceptibility to illness</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="" style="font-weight: 500;font-size: 14px;">2.3 WHAT LEADS YOU TO STRESS</div>
-                        <div class="py-3 justify-content-center d-flex">
-                            <div>
-                                <ul class="nav nav-tabs justify-content-center mb-4"
-                                    style="border-bottom: none;font-size: 20px;">
-                                    <li style="font-size: 16px;" class="active text-center px-3">
-                                        <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
-                                            data-bs-toggle="tab" href="#majorChanges">
-                                            2.3.1 MAJOR LIFE CHANGES
                                         </div>
-                                    </li>
-                                    <li class="text-center px-3" style="font-size: 16px;">
-                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
-                                            data-bs-toggle="tab" href="#Environmental">
-                                            2.3.2 ENVIRONMENTAL FACTORS
+                                        <div id="Thoughts" class="tab-pane fade">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Embarrassing easily</li>
+                                                <li>Low self esteem</li>
+                                                <li>Fear of failure</li>
+                                                <li>Loss of memory</li>
+                                                <li>Preoccupied with thoughts</li>
+                                                <li>Worrying about the future</li>
+                                                <li>Lack of concentration</li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="majorChanges" class="active tab-pane">
-                                        <ul class="" style="font-size: 18px;">
-                                            <li>Geographic mobility</li>
-                                            <li>Going to college</li>
-                                            <li>Transfer to a new school</li>
-                                            <li>Being fired from the job</li>
-                                            <li>Marriage</li>
-                                            <li>Pregnancy</li>
-                                            <li>New job</li>
-                                            <li>New life style</li>
-                                            <li>Divorce</li>
-                                            <li>Death of a loved one</li>
-                                        </ul>
-
-                                    </div>
-                                    <div id="Environmental" class="tab-pane fade">
-                                        <ul class="" style="font-size: 18px;">
-                                            <li>Disappointment</li>
-                                            <li>Noise</li>
-                                            <li>Financial crises</li>
-                                            <li>Competition</li>
-                                            <li>Time pressure or work overload</li>
-                                        </ul>
+                                        <div id="Behavior" class="tab-pane fade">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Sturring and other speak difficulties</li>
+                                                <li>Crying with reason</li>
+                                                <li>Acting impulsively</li>
+                                                <li>Starling easily</li>
+                                                <li>Laughing in a high pitch</li>
+                                                <li>Grindling teeth especially at night</li>
+                                                <li>Lack of appetite or overeating</li>
+                                                <li>Increasing use of drug and alcohol</li>
+                                                <li>Increasing smoking</li>
+                                            </ul>
+                                        </div>
+                                        <div id="Physiology" class="tab-pane fade">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Sweating in the hands or feet</li>
+                                                <li>Increased heart beat or palpitation, Headaches</li>
+                                                <li>Tremor or shaking</li>
+                                                <li>Nervous ticks</li>
+                                                <li>Dryness of mouth, Premenstrual tension</li>
+                                                <li>Feeling weakness, Muscular pain</li>
+                                                <li>Urinating frequently</li>
+                                                <li>Disturb sleep, Diarrhea, Indigestion or Vomiting</li>
+                                                <li>Butterflies in the stomach, Susceptibility to illness</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="" style="font-weight: 500;font-size: 14px;">2.3 WHAT LEADS YOU TO STRESS</div>
+                            <div class="py-3 justify-content-center d-flex">
+                                <div>
+                                    <ul class="nav nav-tabs justify-content-center mb-4"
+                                        style="border-bottom: none;font-size: 20px;">
+                                        <li style="font-size: 16px;" class="active text-center px-3">
+                                            <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
+                                                data-bs-toggle="tab" href="#majorChanges">
+                                                2.3.1 MAJOR LIFE CHANGES
+                                            </div>
+                                        </li>
+                                        <li class="text-center px-3" style="font-size: 16px;">
+                                            <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                                data-bs-toggle="tab" href="#Environmental">
+                                                2.3.2 ENVIRONMENTAL FACTORS
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="majorChanges" class="active tab-pane">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Geographic mobility</li>
+                                                <li>Going to college</li>
+                                                <li>Transfer to a new school</li>
+                                                <li>Being fired from the job</li>
+                                                <li>Marriage</li>
+                                                <li>Pregnancy</li>
+                                                <li>New job</li>
+                                                <li>New life style</li>
+                                                <li>Divorce</li>
+                                                <li>Death of a loved one</li>
+                                            </ul>
+
+                                        </div>
+                                        <div id="Environmental" class="tab-pane fade">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Disappointment</li>
+                                                <li>Noise</li>
+                                                <li>Financial crises</li>
+                                                <li>Competition</li>
+                                                <li>Time pressure or work overload</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="text-align: justify;font-size: 14px;">Dr. Imran has committed himself to help as
+                                many
+                                people as he can to permanently eliminate harmful stress from their daily life and
+                                attain
+                                complete peace and serenity calming them down to a point where stress, anxiety and
+                                depression no longer remains in their mind and body.</p>
                         </div>
-                        <p style="text-align: justify;font-size: 14px;">Dr. Imran has committed himself to help as many
-                            people as he can to permanently eliminate harmful stress from their daily life and attain
-                            complete peace and serenity calming them down to a point where stress, anxiety and
-                            depression no longer remains in their mind and body.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
-                style="background-color: rgba(191, 222, 217, 1);font-size: 20px;color: black;">
-                <div>
-                    <div style="font-size: 60px;">Fear</div>
-                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:black" />
-
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/Q-1.jpg" class="img-fluid" style="width: 100%;height:100%;" />
-            </div>
-        </div>
-
-    </section>
-
-    <div id="backtotop" class="container-fluid" style="bottom: 0;">
-        <div class="justify-content-end d-flex" onclick="back()">
-            <div
-                class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="bg-dark" style="height: 120px;"></div>
-        <div class="" style="min-height: 70px;background-color: #17a2b8;">
-            <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                    <div class="text-lg-start text-md-start text-sm-start text-center">
-                        Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
-                    style="margin-left: auto;">
-                    <div class="d-flex">
-                        <div class="fa fa-facebook-f px-2"></div>
-                        <div class="fa fa-twitter px-2"></div>
-                        <div class="fa fa-google-plus px-2"></div>
-                        <div class="fa fa-linkedin-square px-2"></div>
-                        <div class="fa fa-instagram px-2"></div>
                     </div>
                 </div>
 
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
+                    style="background-color: rgba(191, 222, 217, 1);font-size: 20px;color: black;">
+                    <div>
+                        <div style="font-size: 60px;">Fear</div>
+                        <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:black" />
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 gx-0">
+                    <img src="../Images/Q-1.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+                </div>
+            </div>
+
+        </section>
+
+        <div id="backtotop" class="container-fluid" style="bottom: 0;">
+            <div class="justify-content-end d-flex" onclick="back()">
+                <div
+                    class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
+                </div>
             </div>
         </div>
-    </footer>
+
+        <footer>
+            <div class="bg-dark" style="height: 120px;"></div>
+            <div class="" style="min-height: 70px;background-color: #17a2b8;">
+                <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                        <div class="text-lg-start text-md-start text-sm-start text-center">
+                            Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT |
+                            Privacy
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
+                        style="margin-left: auto;">
+                        <div class="d-flex">
+                            <div class="fa fa-facebook-f px-2"></div>
+                            <div class="fa fa-twitter px-2"></div>
+                            <div class="fa fa-google-plus px-2"></div>
+                            <div class="fa fa-linkedin-square px-2"></div>
+                            <div class="fa fa-instagram px-2"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <div class="mt-5" id="loader">
+            <div class="justify-content-center d-flex">
+                <img src="./Images/Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+                <div id="spinner" class="text-center"></div>
+            </div>
+        </div>
+
+        <section style="display:none;" id="content" class="animate-bottom">
 </body>
 
 </html>

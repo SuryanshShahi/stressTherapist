@@ -25,424 +25,474 @@
 </style>
 
 <body>
-
-    <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
-        <div class="container-lg container-fluid">
-            <div class="row my-2" style="font-size: 10px;">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
-                    style="border-right: 1px solid #fff;">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
-                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
-                                AM-8:00 PM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
-                                835
-                                0536</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
-                    <div class="d-flex list-unstyled align-items-center">
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                style="color: grey;"></a>
-                        </div>
-
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
-                                style="color: grey;"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="mt-5" id="loader">
+        <div class="justify-content-center d-flex">
+            <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+            <div id="spinner" class="text-center"></div>
         </div>
-    </nav>
+    </div>
 
-    <header class="top-0 position-sticky" id="header" style="z-index: 999;">
-        <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
-            style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+    <section style="display:none;" id="content" class="animate-bottom">
+        <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
             <div class="container-lg container-fluid">
-                <a href="../Home.html" class="navbar-brand" href="#">
-                    <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="fa fa-bars fa-lg"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" style="margin-left: auto;">
-                        <li class=" nav-item px-1">
-                            <a href="./Imran.html" exact class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                ABOUT DR. IMRAN RASID
+                <div class="row my-2" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
+                        style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
+                                WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                    AM-8:00 PM</span>
                             </a>
-                        </li>
-                        <li class="nav-item px-1 position-relative">
-                            <a href="#" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./stressReduction.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Therapist for Stress
-                                                        Reduction</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./treatmentsForAddictions.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Treatment for addictions
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="active nav-item px-1 position-relative">
-                            <a href="./services.html" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                SERVICES&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./adult.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="dropdown" style="width: 100%;">
-                                                        Adult
-                                                        <a href="./PTSD.html" style="color: #444;" class="text-decoration-none">
-                                                            <div class="dropdown-content py-2 my-2"
-                                                                style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
-                                                                Post-traumatic Stress Disorder (PTSD) <div
-                                                                    class="fa fa-angle-left px-3"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./eliminateFearsAndPhobias.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Eliminate Fears & Phobias
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./stressAndAnxietytreatment.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Stress and Anxiety
-                                                        Treatment
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./addictionTreatment.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Addiction Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./anxietyAndDepressionTreatment.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Anxiety & Depression
-                                                        Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./mentalHealth.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Mental Health & Addiction
-                                                        Therapies</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./testimonials.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                TESTIMONIALS
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./blog.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                BLOG
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./contact.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                CONTACT US
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
-                            style="border-right: 1px solid #fff;">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="./bookAVisit.html" class="text-decoration-none px-2 active"
-                                    style="color: grey;">
-                                    WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT
-                                        8:00
-                                        AM-8:00 PM</span>
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span
-                                    class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                                    EMAIL: <span
-                                        style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                style="color: grey;">
+                                EMAIL: <span
+                                    style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                                    PHONE: <span style="font-weight: 500;color: black;"
-                                        style="color: black;">&nbsp;&nbsp;201
-                                        835
-                                        0536</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                PHONE: <span style="font-weight: 500;color: black;"
+                                    style="color: black;">&nbsp;&nbsp;201
+                                    835
+                                    0536</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
-                            <div class="d-flex list-unstyled align-items-center">
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                        style="color: grey;"></a>
-                                </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
+                        <div class="d-flex list-unstyled align-items-center">
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
 
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
-                                        style="color: grey;"></a>
-                                </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <section>
-        <div class="row gx-0">
-            <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/PTSD.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+        <header class="top-0 position-sticky" id="header" style="z-index: 999;">
+            <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+                style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+                <div class="container-lg container-fluid">
+                    <a href="../Home.html" class="navbar-brand" href="#">
+                        <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="margin-left: auto;">
+                            <li class=" nav-item px-1">
+                                <a href="./Imran.html" exact class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    ABOUT DR. IMRAN RASID
+                                </a>
+                            </li>
+                            <li class="nav-item px-1 position-relative">
+                                <a href="#" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./stressReduction.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Therapist for Stress
+                                                            Reduction</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./treatmentsForAddictions.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Treatment for
+                                                            addictions
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="active nav-item px-1 position-relative">
+                                <a href="./services.html" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./adult.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="dropdown" style="width: 100%;">
+                                                            Adult
+                                                            <a href="./PTSD.html" style="color: #444;"
+                                                                class="text-decoration-none">
+                                                                <div class="dropdown-content py-2 my-2"
+                                                                    style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
+                                                                    Post-traumatic Stress Disorder (PTSD) <div
+                                                                        class="fa fa-angle-left px-3"></div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./eliminateFearsAndPhobias.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Eliminate Fears &
+                                                            Phobias
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./stressAndAnxietytreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Stress and Anxiety
+                                                            Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./addictionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Addiction Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./anxietyAndDepressionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Anxiety & Depression
+                                                            Treatment</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./mentalHealth.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Mental Health &
+                                                            Addiction
+                                                            Therapies</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./testimonials.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    TESTIMONIALS
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./blog.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    BLOG
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./contact.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
+                                style="border-right: 1px solid #fff;">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="./bookAVisit.html" class="text-decoration-none px-2 active"
+                                        style="color: grey;">
+                                        WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON -
+                                            SAT
+                                            8:00
+                                            AM-8:00 PM</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                        style="color: grey;">
+                                        EMAIL: <span
+                                            style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                        PHONE: <span style="font-weight: 500;color: black;"
+                                            style="color: black;">&nbsp;&nbsp;201
+                                            835
+                                            0536</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
+                                <div class="d-flex list-unstyled align-items-center">
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank"
+                                            class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                            style="color: grey;"></a>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
+                                            style="color: grey;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="row gx-0">
+                <div class="col-lg-6 col-md-6 col-12 gx-0">
+                    <img src="../Images/PTSD.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
+                    style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
+                    <div class="container-sm">
+                        <div style="font-size: 60px;">Eliminate Fears and Phobias</div>
+                        <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
+                        <p style="font-size: 14px;text-align:justify">Most people experience fears and
+                            phobias and, many have been dealing with them for a long time. One can easily overcome these
+                            problems with the help of therapy. More than 12% of people experience simple phobias in
+                            their
+                            lives. We often see the development of phobias during childhood and they get aggravated
+                            during
+                            adulthood for decades. Luckily they can easily be eliminated by therapy.
+                            <br><br>
+                            Common fears include the fear of rejection, fear of jobs and interviews, phobias of insects,
+                            mammals, reptiles, birds, animals etc.
+                            <br> For living a good, confident and brave life, you have to overcome your fears and
+                            phobias.
+                            <br>It is not good to stick with them for life as they may prevent you from living life with
+                            confidence.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
-                style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
-                <div class="container-sm">
-                    <div style="font-size: 60px;">Eliminate Fears and Phobias</div>
-                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <p style="font-size: 14px;text-align:justify">Most people experience fears and
-                        phobias and, many have been dealing with them for a long time. One can easily overcome these
-                        problems with the help of therapy. More than 12% of people experience simple phobias in their
-                        lives. We often see the development of phobias during childhood and they get aggravated during
-                        adulthood for decades. Luckily they can easily be eliminated by therapy.
+
+            <div class="text-white pt-3 pb-5" style="background-color:#bfded9;">
+                <div class="container">
+                    <div class="" style="font-size:60px">Other Stress Therapist NJ Services</div>
+                    <ul class="list-unstyled" style="font-size: 14px;font-weight:400;text-align: justify;">
+                        <li class="mt-2">According to its Greek origin, the word psychologist means a study of mind. It
+                            is a
+                            state of trance where a client is completely aware of whatever is happening. Therapy refers
+                            to a
+                            state or condition in which a client becomes highly responsive to positive suggestions.</li>
+                        <li class="mt-2">You may have heard of the conscious and subconscious mind. The conscious mind
+                            designs the event, and stores or maintains the set-up of thoughts. Therapy acts at a
+                            sub-conscious level of the mind in order to re-program the related issue. It allows you to
+                            access your subconscious mind, which is the most vulnerable and powerful part of your mind
+                            where
+                            change takes place. You all know we use 10% of our brain but with the help of therapy, we
+                            can
+                            use the other 90% that can be helpful in reducing pain and removing bad habits.</li>
+                        <li>It is recognized as a complementary healing tool by the British Medical Association, the
+                            American Medical Association and by the American Psychiatric Association. Therapy is a
+                            gentle
+                            and yet highly effective process that can lead to significant changes in life.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-white pt-3 pb-5" style="background-color:#1d9390;">
+                <div class="container">
+                    <div class="" style="font-size:60px">Therapy for fear and phobia</div>
+                    <p style="font-size: 14px;text-align: justify;">There are a number of people in this
+                        world, who are suffering from fear and phobias. We all have some tension and insecurities in
+                        life,
+                        however, if we constantly think about things that worry us, then it’ll make the situation even
+                        worse. So, rather than thinking of the issues, we must always try and think about their
+                        solutions.
+                        There are many solutions in the world, but we have to choose the best one for fears and phobias.
+                        A
+                        phobic disorder may be defined as a severe panic state of mind that suddenly originates in a
+                        person,
+                        once he encounters a specific situation. This is basically a type of anxiety that causes anyone
+                        to
+                        experience an extreme fear of a situation. There are completely different types of phobic
+                        disorders
+                        and millions of people around the world suffer from one type of phobia or another. To cure a
+                        phobic
+                        disorder permanently, we’ve got to first understand the basic cause behind it.
                         <br><br>
-                        Common fears include the fear of rejection, fear of jobs and interviews, phobias of insects,
-                        mammals, reptiles, birds, animals etc.
-                        <br> For living a good, confident and brave life, you have to overcome your fears and
-                        phobias.
-                        <br>It is not good to stick with them for life as they may prevent you from living life with
-                        confidence.
+                        As an example, if somebody is afraid of heights, it would be possible that this person had an
+                        awfully unhealthy fall in his childhood it could be that because of such a fall. He has become
+                        cautions of all heights. To cure this person, we’ve got to first make him alert to the entire
+                        situation. This will be done through Therapy for fear and phobia. Throughout therapy treatment
+                        for
+                        this particular fear that person is taken back to the time when this incident really took place.
+                        Then they are asked to witness that incident calmly. They are treated to accept it as an
+                        unfortunate
+                        incident and to move on with life. A properly executed therapy session can help that person to
+                        recover from the trauma of the past, Slowly, their phobic disorder of heights is going to be
+                        cured
+                        forever. Treatment for fear and phobia therapy is the best because it shows instant results.
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="text-white pt-3 pb-5" style="background-color:#bfded9;">
-            <div class="container">
-                <div class="" style="font-size:60px">Other Stress Therapist NJ Services</div>
-                <ul class="list-unstyled" style="font-size: 14px;font-weight:400;text-align: justify;">
-                    <li class="mt-2">According to its Greek origin, the word psychologist means a study of mind. It is a
-                        state of trance where a client is completely aware of whatever is happening. Therapy refers to a
-                        state or condition in which a client becomes highly responsive to positive suggestions.</li>
-                    <li class="mt-2">You may have heard of the conscious and subconscious mind. The conscious mind
-                        designs the event, and stores or maintains the set-up of thoughts. Therapy acts at a
-                        sub-conscious level of the mind in order to re-program the related issue. It allows you to
-                        access your subconscious mind, which is the most vulnerable and powerful part of your mind where
-                        change takes place. You all know we use 10% of our brain but with the help of therapy, we can
-                        use the other 90% that can be helpful in reducing pain and removing bad habits.</li>
-                    <li>It is recognized as a complementary healing tool by the British Medical Association, the
-                        American Medical Association and by the American Psychiatric Association. Therapy is a gentle
-                        and yet highly effective process that can lead to significant changes in life.</li>
-                </ul>
+            <div class="pt-3 pb-5">
+                <div class="container">
+                    <div class="" style="font-size:60px;font-weight: 400;">Most Common Fears & Phobias</div>
+                    <p style="font-size: 14px;text-align: justify;">The fear of flying could be a common
+                        phobia for several individuals. It can hinder vacation and travel plans. This fear will cause
+                        such a
+                        large number of difficulties issues for individuals particularly if their job require them to
+                        travel. Therapy for fear of flying is often an opportune cure. The fear of flying might, like
+                        every
+                        alternative fear, even have an underlying drawback causing it. Some of those include a fear of
+                        crashing, the concern of not being in control, and claustrophobia.
+                        <br><br>
+                        Typically once it’s found that one of these is the underlying problem, there’s hope that it can
+                        be
+                        traced back to a specific incident. The fear could’ve initially been minimal, only to rise as
+                        time
+                        went on.
+                        <br><br>
+                        The problem with the fear of flying, or aerophobia, is that the mechanism in your brain that
+                        warns
+                        you to proceed with caution is super sensitive. This mechanism is good to possess once required
+                        for,
+                        however, once it’s not operating properly, it serves as a problem. Especially, since flying has
+                        become is actually the safest way to travel and has is commonplace.
+                    </p>
+
+                    <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex">
+                        <a href="tel:201 835 0536">
+                            <div class="btn btn-transparent bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
+                                style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">Call:
+                                201
+                                835 0536</div>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="text-white pt-3 pb-5" style="background-color:#1d9390;">
-            <div class="container">
-                <div class="" style="font-size:60px">Therapy for fear and phobia</div>
-                <p style="font-size: 14px;text-align: justify;">There are a number of people in this
-                    world, who are suffering from fear and phobias. We all have some tension and insecurities in life,
-                    however, if we constantly think about things that worry us, then it’ll make the situation even
-                    worse. So, rather than thinking of the issues, we must always try and think about their solutions.
-                    There are many solutions in the world, but we have to choose the best one for fears and phobias. A
-                    phobic disorder may be defined as a severe panic state of mind that suddenly originates in a person,
-                    once he encounters a specific situation. This is basically a type of anxiety that causes anyone to
-                    experience an extreme fear of a situation. There are completely different types of phobic disorders
-                    and millions of people around the world suffer from one type of phobia or another. To cure a phobic
-                    disorder permanently, we’ve got to first understand the basic cause behind it.
-                    <br><br>
-                    As an example, if somebody is afraid of heights, it would be possible that this person had an
-                    awfully unhealthy fall in his childhood it could be that because of such a fall. He has become
-                    cautions of all heights. To cure this person, we’ve got to first make him alert to the entire
-                    situation. This will be done through Therapy for fear and phobia. Throughout therapy treatment for
-                    this particular fear that person is taken back to the time when this incident really took place.
-                    Then they are asked to witness that incident calmly. They are treated to accept it as an unfortunate
-                    incident and to move on with life. A properly executed therapy session can help that person to
-                    recover from the trauma of the past, Slowly, their phobic disorder of heights is going to be cured
-                    forever. Treatment for fear and phobia therapy is the best because it shows instant results.
-                </p>
-            </div>
-        </div>
-
-        <div class="pt-3 pb-5">
-            <div class="container">
-                <div class="" style="font-size:60px;font-weight: 400;">Most Common Fears & Phobias</div>
-                <p style="font-size: 14px;text-align: justify;">The fear of flying could be a common
-                    phobia for several individuals. It can hinder vacation and travel plans. This fear will cause such a
-                    large number of difficulties issues for individuals particularly if their job require them to
-                    travel. Therapy for fear of flying is often an opportune cure. The fear of flying might, like every
-                    alternative fear, even have an underlying drawback causing it. Some of those include a fear of
-                    crashing, the concern of not being in control, and claustrophobia.
-                    <br><br>
-                    Typically once it’s found that one of these is the underlying problem, there’s hope that it can be
-                    traced back to a specific incident. The fear could’ve initially been minimal, only to rise as time
-                    went on.
-                    <br><br>
-                    The problem with the fear of flying, or aerophobia, is that the mechanism in your brain that warns
-                    you to proceed with caution is super sensitive. This mechanism is good to possess once required for,
-                    however, once it’s not operating properly, it serves as a problem. Especially, since flying has
-                    become is actually the safest way to travel and has is commonplace.
-                </p>
-
-                <div class="justify-content-center d-lg-block d-md-block d-sm-block d-flex">
-                    <a href="tel:201 835 0536"><div class="btn btn-transparent bg-transparent shadow-sm rounded-0 px-5 py-2 mt-3"
-                        style="transition:0.5s;border: 2px solid #1d9390;color: #1d9390;font-weight: 500;">Call: 201
-                        835 0536</div></a>
+        <div id="backtotop" class="container-fluid" style="bottom: 0;">
+            <div class="justify-content-end d-flex" onclick="back()">
+                <div
+                    class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="bg-dark" style="height: 120px;"></div>
+            <div class="" style="min-height: 70px;background-color: #17a2b8;">
+                <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                        <div class="text-lg-start text-md-start text-sm-start text-center">
+                            Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT |
+                            Privacy
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
+                        style="margin-left: auto;">
+                        <div class="d-flex">
+                            <div class="fa fa-facebook-f px-2"></div>
+                            <div class="fa fa-twitter px-2"></div>
+                            <div class="fa fa-google-plus px-2"></div>
+                            <div class="fa fa-linkedin-square px-2"></div>
+                            <div class="fa fa-instagram px-2"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </section>
-
-    <div id="backtotop" class="container-fluid" style="bottom: 0;">
-        <div class="justify-content-end d-flex" onclick="back()">
-            <div
-                class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="bg-dark" style="height: 120px;"></div>
-        <div class="" style="min-height: 70px;background-color: #17a2b8;">
-            <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                    <div class="text-lg-start text-md-start text-sm-start text-center">
-                        Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
-                    style="margin-left: auto;">
-                    <div class="d-flex">
-                        <div class="fa fa-facebook-f px-2"></div>
-                        <div class="fa fa-twitter px-2"></div>
-                        <div class="fa fa-google-plus px-2"></div>
-                        <div class="fa fa-linkedin-square px-2"></div>
-                        <div class="fa fa-instagram px-2"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

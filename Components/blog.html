@@ -17,322 +17,348 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <script src="../index.js"></script>
+
 <body>
-
-    <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
-        <div class="container-lg container-fluid">
-            <div class="row my-2" style="font-size: 10px;">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
-                    style="border-right: 1px solid #fff;">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
-                            WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
-                                AM-8:00 PM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                            EMAIL: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
-                    <div class="d-flex align-items-center">
-                        <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                            style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                        <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
-                            PHONE: <span style="font-weight: 500;color: black;" style="color: black;">&nbsp;&nbsp;201
-                                835
-                                0536</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
-                    <div class="d-flex list-unstyled align-items-center">
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
-                                style="color: grey;"></a>
-                        </div>
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                style="color: grey;"></a>
-                        </div>
-
-                        <div class="">
-                            <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
-                                style="color: grey;"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="mt-5" id="loader">
+        <div class="justify-content-center d-flex">
+            <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid" style="height:60px" />
+            <div id="spinner" class="text-center"></div>
         </div>
-    </nav>
+    </div>
 
-    <header class="position-sticky top-0" id="header" style="z-index: 999;">
-        <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
-            style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+    <section style="display:none;" id="content" class="animate-bottom">
+        <nav id="topnav" class="topnav" style="border-bottom: 0.1px solid silver;">
             <div class="container-lg container-fluid">
-                <a href="../Home.html" class="navbar-brand" href="#">
-                    <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
-                    <span class="fa fa-bars fa-lg"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" style="margin-left: auto;">
-                        <li class="nav-item px-1">
-                            <a href="./Imran.html" exact class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                ABOUT DR. IMRAN RASID
+                <div class="row my-2" style="font-size: 10px;">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 justify-content-center d-flex px-3"
+                        style="border-right: 1px solid #fff;">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="./bookAVisit.html" class="text-decoration-none px-2" style="color: grey;">
+                                WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT 8:00
+                                    AM-8:00 PM</span>
                             </a>
-                        </li>
-                        <li class="nav-item px-1 position-relative">
-                            <a href="#" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./stressReduction.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Therapist for Stress
-                                                        Reduction</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./treatmentsForAddictions.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Treatment for addictions
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item px-1 position-relative">
-                            <a href="./services.html" class="nav-link d-flex align-items-center"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                SERVICES&nbsp;<span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4" style=" width: fit-content">
-                                <div class=" justify-content-center d-flex">
-                                    <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
-                                    background: #eee;
-                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
-                                    width: max-content;
-                                  ">
-                                        <ul class="list-unstyled dropdownHover">
-                                            <a href="./adult.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="dropdown" style="width: 100%;">
-                                                        Adult
-                                                        <a href="./PTSD.html" style="color: #444;" class="text-decoration-none">
-                                                            <div class="dropdown-content py-2 my-2"
-                                                                style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
-                                                                Post-traumatic Stress Disorder (PTSD) <div
-                                                                    class="fa fa-angle-left px-3"></div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./eliminateFearsAndPhobias.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Eliminate Fears & Phobias
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./stressAndAnxietytreatment.html"
-                                                class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Stress and Anxiety
-                                                        Treatment
-                                                    </div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./addictionTreatment.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Addiction Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./anxietyAndDepressionTreatment.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Anxiety & Depression
-                                                        Treatment</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                            <a href="./mentalHealth.html" class="text-decoration-none text-dark">
-                                                <li class="py-2 d-flex align-items-center">
-                                                    <div class="menuName" style="width: 100%;">Mental Health & Addiction
-                                                        Therapies</div>
-                                                    <div class="fa fa-angle-left px-3"></div>
-                                                </li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./testimonials.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                TESTIMONIALS
-                            </a>
-                        </li>
-                        <li class="nav-item active px-1">
-                            <a href="./blog.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                BLOG
-                            </a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a href="./contact.html" class="nav-link"
-                                style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
-                                CONTACT US
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
-                            style="border-right: 1px solid #fff;">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="" class="text-decoration-none px-2 active"
-                                    style="color: grey;">
-                                    WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON - SAT
-                                        8:00
-                                        AM-8:00 PM</span>
-                                </a>
-                            </div>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span
-                                    class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2" style="color: grey;">
-                                    EMAIL: <span
-                                        style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                style="color: grey;">
+                                EMAIL: <span
+                                    style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div
-                            class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
-                            <div class="d-flex align-items-center">
-                                <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
-                                    style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
-                                <a href="tel: 201 385 0536" class="text-decoration-none px-2" style="color: grey;">
-                                    PHONE: <span style="font-weight: 500;color: black;"
-                                        style="color: black;">&nbsp;&nbsp;201
-                                        835
-                                        0536</span>
-                                </a>
-                            </div>
+                    <div
+                        class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 justify-content-center d-flex px-3">
+                        <div class="d-flex align-items-center">
+                            <span class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                            <a href="tel:201 835 0536" class="text-decoration-none px-2" style="color: grey;">
+                                PHONE: <span style="font-weight: 500;color: black;"
+                                    style="color: black;">&nbsp;&nbsp;201
+                                    835
+                                    0536</span>
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
-                            <div class="d-flex list-unstyled align-items-center">
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
-                                        style="color: grey;"></a>
-                                </div>
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
-                                        style="color: grey;"></a>
-                                </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 justify-content-center d-flex">
+                        <div class="d-flex list-unstyled align-items-center">
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-facebook"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-google-plus"
+                                    style="color: grey;"></a>
+                            </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                    style="color: grey;"></a>
+                            </div>
 
-                                <div class="">
-                                    <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
-                                        style="color: grey;"></a>
-                                </div>
+                            <div class="">
+                                <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-instagram"
+                                    style="color: grey;"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
 
-    <div id="backtotop" class="container-fluid" style="bottom: 0;">
-        <div class="justify-content-end d-flex" onclick="back()">
-            <div
-                class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
-            </div>
-        </div>
-    </div>
+        <header class="position-sticky top-0" id="header" style="z-index: 999;">
+            <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
+                style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
+                <div class="container-lg container-fluid">
+                    <a href="../Home.html" class="navbar-brand" href="#">
+                        <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="margin-left: auto;">
+                            <li class="nav-item px-1">
+                                <a href="./Imran.html" exact class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    ABOUT DR. IMRAN RASID
+                                </a>
+                            </li>
+                            <li class="nav-item px-1 position-relative">
+                                <a href="#" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
+                                    style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./stressReduction.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Therapist for Stress
+                                                            Reduction</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./treatmentsForAddictions.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Treatment for
+                                                            addictions
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
-    <footer>
-        <div class="bg-dark" style="height: 120px;"></div>
-        <div class="" style="min-height: 70px;background-color: #17a2b8;">
-            <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-12">
-                    <div class="text-lg-start text-md-start text-sm-start text-center">
-                        Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT | Privacy
+                            <li class="nav-item px-1 position-relative">
+                                <a href="./services.html" class="nav-link d-flex align-items-center"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    SERVICES&nbsp;<span class="fa fa-angle-down"></span>
+                                </a>
+                                <div class="dropdown-menu menu rounded-0 border-0 py-lg-4 py-4"
+                                    style=" width: fit-content">
+                                    <div class=" justify-content-center d-flex">
+                                        <div class="" style="border-bottom: 3px solid rgba(153, 195, 189, 1);
+                                    background: #eee;
+                                    box-shadow: 0 2px 29px rgb(0 0 0 / 5%);
+                                    width: max-content;
+                                  ">
+                                            <ul class="list-unstyled dropdownHover">
+                                                <a href="./adult.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="dropdown" style="width: 100%;">
+                                                            Adult
+                                                            <a href="./PTSD.html" style="color: #444;"
+                                                                class="text-decoration-none">
+                                                                <div class="dropdown-content py-2 my-2"
+                                                                    style="border-bottom: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
+                                                                    Post-traumatic Stress Disorder (PTSD) <div
+                                                                        class="fa fa-angle-left px-3"></div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./eliminateFearsAndPhobias.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Eliminate Fears &
+                                                            Phobias
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./stressAndAnxietytreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Stress and Anxiety
+                                                            Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./addictionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Addiction Treatment
+                                                        </div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./anxietyAndDepressionTreatment.html"
+                                                    class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Anxiety & Depression
+                                                            Treatment</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                                <a href="./mentalHealth.html" class="text-decoration-none text-dark">
+                                                    <li class="py-2 d-flex align-items-center">
+                                                        <div class="menuName" style="width: 100%;">Mental Health &
+                                                            Addiction
+                                                            Therapies</div>
+                                                        <div class="fa fa-angle-left px-3"></div>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./testimonials.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    TESTIMONIALS
+                                </a>
+                            </li>
+                            <li class="nav-item active px-1">
+                                <a href="./blog.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    BLOG
+                                </a>
+                            </li>
+                            <li class="nav-item px-1">
+                                <a href="./contact.html" class="nav-link"
+                                    style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row mt-2 mb-1 topNavSocialDetails" style="font-size: 10px;">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 px-3 justify-content-center d-flex"
+                                style="border-right: 1px solid #fff;">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-clock-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="" class="text-decoration-none px-2 active" style="color: grey;">
+                                        WORKING HOURS: <span style="font-weight: 500;color: black;">&nbsp;&nbsp;MON -
+                                            SAT
+                                            8:00
+                                            AM-8:00 PM</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-envelope-o"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="mailto:DRIMRAN55@HOTMAIL.COM" class="text-decoration-none px-2"
+                                        style="color: grey;">
+                                        EMAIL: <span
+                                            style="font-weight: 500;color: black;">&nbsp;&nbsp;DRIMRAN55@HOTMAIL.COM</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-sm-0 mb-2 pl-4 px-3 justify-content-center d-flex">
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="align-items-center d-flex justify-content-center text-white fa fa-phone"
+                                        style="background:#1d9390;height: 20px;width:20px;border-radius: 50%;font-size: 12px;"></span>
+                                    <a href="tel: 201 385 0536" class="text-decoration-none px-2" style="color: grey;">
+                                        PHONE: <span style="font-weight: 500;color: black;"
+                                            style="color: black;">&nbsp;&nbsp;201
+                                            835
+                                            0536</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center d-flex">
+                                <div class="d-flex list-unstyled align-items-center">
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-facebook"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none px-2 fa-lg fa fa-twitter"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-google-plus"
+                                            style="color: grey;"></a>
+                                    </div>
+                                    <div class="">
+                                        <a href="" target="_blank"
+                                            class="text-decoration-none px-2 fa-lg fa fa-linkedin"
+                                            style="color: grey;"></a>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="" target="_blank" class="text-decoration-none fa-lg fa fa-instagram"
+                                            style="color: grey;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
-                    style="margin-left: auto;">
-                    <div class="d-flex">
-                        <div class="fa fa-facebook-f px-2"></div>
-                        <div class="fa fa-twitter px-2"></div>
-                        <div class="fa fa-google-plus px-2"></div>
-                        <div class="fa fa-linkedin-square px-2"></div>
-                        <div class="fa fa-instagram px-2"></div>
-                    </div>
-                </div>
+            </nav>
+        </header>
 
+        <div id="backtotop" class="container-fluid" style="bottom: 0;">
+            <div class="justify-content-end d-flex" onclick="back()">
+                <div
+                    class="backtotop fa fa-angle-up text-decoration-none text-white justify-content-center d-flex align-items-center">
+                </div>
             </div>
         </div>
-    </footer>
+
+        <footer>
+            <div class="bg-dark" style="height: 120px;"></div>
+            <div class="" style="min-height: 70px;background-color: #17a2b8;">
+                <div class="row d-flex text-white align-items-center mx-5 py-3" style="min-height: 70px;">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-12">
+                        <div class="text-lg-start text-md-start text-sm-start text-center">
+                            Copyright by StressTherapistNJ 2018. All rights reserved. | Developed By Quantum IT |
+                            Privacy
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 justify-content-lg-end justify-content-md-end justify-content-sm-end justify-content-center d-flex mt-lg-0 mt-md-0 mt-sm-0 mt-3"
+                        style="margin-left: auto;">
+                        <div class="d-flex">
+                            <div class="fa fa-facebook-f px-2"></div>
+                            <div class="fa fa-twitter px-2"></div>
+                            <div class="fa fa-google-plus px-2"></div>
+                            <div class="fa fa-linkedin-square px-2"></div>
+                            <div class="fa fa-instagram px-2"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
