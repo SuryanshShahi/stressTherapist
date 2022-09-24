@@ -1,3 +1,10 @@
+myFunction = () => {
+  setTimeout(() => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 1000);
+};
+
 const back = () => {
   window.scroll(0, 0);
 };
@@ -19,14 +26,3 @@ const changeBackground = () => {
   }
 };
 window.addEventListener("scroll", changeBackground);
-
-var x;
-
-function myFunction() {
-  x = setTimeout(showPage, 500);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("content").style.display = "block";
-}
