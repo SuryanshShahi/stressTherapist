@@ -4,12 +4,17 @@ body {
 .btn {
   box-shadow: 1px 1px 2px 0px #80808082 !important;
 }
-li{
+li {
   font-size: 14px;
 }
 /* ----------------------------------NavBar---------------------------------- */
-.nav-item.active{
+.nav-item.active {
   border-bottom: 3px solid rgba(153, 195, 189, 1);
+}
+
+.nav-link:hover {
+  color: rgba(153, 195, 189, 1) !important;
+  text-decoration: underline;
 }
 #navbar {
   background-color: rgba(255, 255, 255, 0.95) !important;
@@ -30,7 +35,6 @@ header {
   text-decoration: underline;
 }
 
-
 .dropdown-menu {
   opacity: 1;
   background-color: transparent !important;
@@ -49,7 +53,7 @@ header {
 
 .dropdownHover li:hover {
   cursor: pointer;
-  color: grey !important;
+  color: rgba(153, 195, 189, 1) !important;
   transition: 0.3s;
 }
 .nav-item:hover .dropdown-menu {
@@ -116,4 +120,33 @@ header {
     display: none !important;
   }
 }
+@media (max-width: 990px) {
+  .navbar li {
+    width: fit-content;
+  }
+}
 /* -------------------------------------------------------------------------- */
+#backtotop {
+  position: fixed;
+  float: right;
+  z-index: 999;
+  display: none;
+  bottom: 5%;
+}
+
+.backtotop {
+  display: block;
+  font-size: 22px !important;
+  height: 40px;
+  cursor: pointer;
+  width: 50px;
+  border-radius: 5px 5px 0px 0px;
+  line-height: 40px;
+  background-color: #065a57;
+  transition: 0.5s;
+}
+
+.backtotop:hover {
+  background-color: white !important;
+  color: #065a57 !important;
+}
