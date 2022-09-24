@@ -19,9 +19,8 @@
 <script src="../index.js"></script>
 
 <style>
-    .btn-transparent:hover {
-        background-color: #1d9390 !important;
-        color: white !important;
+    .tab.active {
+        border-bottom: 2.5px solid white;
     }
 </style>
 
@@ -99,7 +98,7 @@
         <nav id="navbar" class="navbar navbar-expand-lg py-lg-3 py-md-3 py-sm-3 py-2 bg-white"
             style="box-shadow:0px 1px 2px 0px silver;top: 0;position:sticky;z-index:1">
             <div class="container-lg container-fluid">
-                <a href="../Home.html" class="navbar-brand">
+                <a href="../Home.html" class="navbar-brand" href="#">
                     <img src="../Images/Stress-Reduction-Clinic-1.png" class="img-fluid logo" style="height:60px" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -119,7 +118,7 @@
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 FIND A THERAPIST&nbsp;<span class="fa fa-angle-down"></span>
                             </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
+                            <div class="dropdown-menu menu rounded-0 border-0 py-4" style=" width: fit-content">
                                 <div class=" justify-content-center d-flex">
                                     <div class="" style="border-top: 3px solid rgba(153, 195, 189, 1);
                                     background: #eee;
@@ -153,7 +152,7 @@
                                 style="color: #444;font-weight:700;font-family:'Times New Roman', Times, serif">
                                 SERVICES&nbsp;<span class="fa fa-angle-down"></span>
                             </a>
-                            <div class="dropdown-menu menu rounded-0 border-0 py-3" style=" width: fit-content">
+                            <div class="dropdown-menu menu rounded-0 border-0 py-4" style=" width: fit-content">
                                 <div class=" justify-content-center d-flex">
                                     <div class="" style="border-top: 3px solid rgba(153, 195, 189, 1);
                                     background: #eee;
@@ -165,7 +164,8 @@
                                                 <li class="py-2 d-flex align-items-center">
                                                     <div class="dropdown" style="width: 100%;">
                                                         Adult
-                                                        <a href="./PTSD.html" style="color: #444;" class="text-decoration-none">
+                                                        <a href="./PTSD.html" style="color: #444;"
+                                                            class="text-decoration-none">
                                                             <div class="dropdown-content py-2 my-2"
                                                                 style="border-top: 3px solid rgba(153, 195, 189, 1);padding-left: 20px;">
                                                                 Post-traumatic Stress Disorder (PTSD) <div
@@ -199,7 +199,8 @@
                                                     <div class="fa fa-angle-left px-3"></div>
                                                 </li>
                                             </a>
-                                            <a href="./anxietyAndDepressionTreatment.html" class="text-decoration-none text-dark">
+                                            <a href="./anxietyAndDepressionTreatment.html"
+                                                class="text-decoration-none text-dark">
                                                 <li class="py-2 d-flex align-items-center">
                                                     <div class="menuName" style="width: 100%;">Anxiety & Depression
                                                         Treatment</div>
@@ -309,79 +310,327 @@
             </div>
         </nav>
     </header>
+
     <section>
         <div class="row gx-0">
             <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/great_american_smokeout_cover.png" class="img-fluid"
-                    style="width: 100%;height:100%;" />
+                <img src="../Images/pain.jpg" class="img-fluid" style="width: 100%;height:100%;" />
             </div>
             <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
                 style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
                 <div>
-                    <div style="font-size: 35px;">How To Quit Smoking With “Therapy For Addictions”</div>
+                    <div style="font-size: 60px;">Services Offered</div>
                     <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <p style="font-size: 14px;font-weight:500;text-align:justify">Do you want to quit smoking with the
-                        help of therapy? Know about the working of therapy for addictions.
-                        <br><br>
-                        We all know quitting smoking is not an easy task for anyone. Most of the people want to quit
-                        smoking habits, they have tried but failed.
-                        <br><br>
-                        We all know that therapy for an addiction has long been recognized for the comical outcome of a
-                        staged therapy. The America Lung Association report says that In United States 480,000 people
-                        die from tobacco every year due to smoking.
-                    </p>
+                    <ul class="list-unstyled">
+                        <li>o Pain (Migraine, Fibromyalgia, Arthritis, Burns, Backache etc.)</li>
+                        <li>o Stress and Anxiety</li>
+                        <li>o Smoking cessation</li>
+                        <li>o Fear</li>
+                        <li>o Sleep problems</li>
+                        <li>o Acne vulgaris</li>
+                        <li>o IBS (Irritable bowel syndrome)</li>
+                        <li>o Nail biting</li>
+                        <li>o Hair pulling</li>
+                        <li>o Gastric ulcers</li>
+                        <li>o Addictions</li>
+                        And many more……
+                    </ul>
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
-                style="background-color: rgba(125, 193, 187, 1);font-size: 20px;">
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
+                style="background-color: rgba(191, 222, 217, 1);font-size: 20px;color: black;">
                 <div>
-                    <div style="font-size: 35px;">Reduce Alcohol Abuse</div>
-                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <p style="font-size: 14px;font-weight:500;text-align:justify">Alcohol abuse effect can destroy
-                        families, health etc. The effect of alcohol abuse is not only to the drinker but also for those
-                        around her or him. It can affect both psychological and physical health. Alcohol abuse causes a
-                        change in behavior and deteriorates health.
+                    <div style="font-size: 60px;">Pain</div>
+                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:black" />
+                    <p style="font-size: 14px;text-align:justify">Pain is an indication that something is going wrong,
+                        thereby drawing your attention towards taking action. For example, when a nerve is injured or
+                        compressed, it sends pain signals to our awareness a means of protection. This can produce a
+                        variety of unpleasant sensations. The fact that we can differentiate types of pain is indicative
+                        of the intelligence of our body and it’s natural desire to self-correct. Damaged or injured
+                        nerves can also produce odd sensitivities to a range of temperatures and, touch.
                         <br><br>
-                        You are not alone if you want to overcome this problem. If you are struggling with this habit of
-                        your own, Therapy is the solution to your problem. You can try therapy for alcoholism.
+                        In fact, just visiting the doctor or hospital often causes a great deal of anxiety and stress.
+                        <br><br>
+                        During my clinical setting, I have seen over 2000 patients with a wide spectrum of pain
+                        following stress, ranging from acute to chronic. In almost every case I have seen them find
+                        relief and ways to improve their daily lives. I have proven tips and a broad assortment of
+                        therapeutic modalities that definitely helps people to be more comfortable and mobile easily.
                     </p>
+                    <div class="py-3 justify-content-center d-flex">
+                        <div>
+                            <ul class="nav nav-tabs justify-content-center mb-4"
+                                style="border-bottom: none;font-size: 20px;">
+                                <li style="font-size: 16px;" class="active text-center px-3">
+                                    <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
+                                        data-bs-toggle="tab" href="#causes">
+                                        1.1 CAUSES OF PAIN
+                                    </div>
+                                </li>
+                                <li class="text-center px-3" style="font-size: 16px;">
+                                    <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                        data-bs-toggle="tab" href="#symptoms">
+                                        1.2 SYMPTOMS OF PAIN
+                                    </div>
+                                </li>
+                                <li class="text-center px-3" style="font-size: 16px;">
+                                    <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                        data-bs-toggle="tab" href="#types">
+                                        1.3 TYPES OF PAIN
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="tab-content" style="font-size: 14px;">
+                                <div id="causes" class="active tab-pane">
+                                    Pain can be caused by either
+                                    <ul class="" style="font-size: 18px;">
+
+                                        <li>Physical (Pathological) trauma</li>
+                                        <li>Psychological trauma<br>It doesn’t matter what nature is, it is
+                                            interlinked with each other in such a way that it can lead from a mild
+                                            discomfort up to the discomfort of a greater extent. More precisely pain
+                                            can cause stress and stress can worsen pain.</li>
+                                        <li>It is not only physically debilitating, but it can also cause all sorts
+                                            of other side effects like depression, broken relationships,
+                                            alienations, chronic pain, all of which can ruin your life.</li>
+                                    </ul>
+
+                                </div>
+                                <div id="symptoms" class="tab-pane fade">
+                                    There are a lot of signs and symptoms that can be experienced. These sign and
+                                    symptoms can be one or more of the following
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Numbness</li>
+                                                <li>Tingling</li>
+                                                <li>Burning</li>
+                                                <li>Searing</li>
+                                                <li>Piercing</li>
+                                                <li>Aching</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Sharp</li>
+                                                <li>Dull</li>
+                                                <li>Throbbing</li>
+                                                <li>Pins and Needles</li>
+                                                <li>Tightness</li>
+                                                <li>Pressure and Pulling</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="types" class="tab-pane fade">
+                                    <div class="row mt-2">
+                                        <div class="col-6">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Back pain</li>
+                                                <li>Neck pain</li>
+                                                <li>Hip and Joint pain</li>
+                                                <li>Tendonitis</li>
+                                                <li>Chronic pain</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="" style="font-size: 18px;">
+                                                <li>Shoulder pain</li>
+                                                <li>Muscular pain</li>
+                                                <li>Migraine</li>
+                                                <li>Pain from cancer</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/drinking-alcohol.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+                <img src="../Images/LAT.jpg" class="img-fluid" style="width: 100%;height:100%;" />
             </div>
 
+
+
             <div class="col-lg-6 col-md-6 col-12 gx-0">
-                <img src="../Images/Overeating.jpg" class="img-fluid" style="width: 100%;height:100%;" />
+                <img src="../Images/stressAndAnxietytreatment.jpg" class="img-fluid" style="width: 100%;height:100%;" />
             </div>
-            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 text-white align-items-center d-flex"
-                style="background-color: rgba(29, 147, 144, 1);font-size: 20px;">
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
+                style="background-color:#1d9390;font-size: 20px;color: white;">
                 <div>
-                    <div style="font-size: 35px;">Treatment For Food Addiction</div>
+                    <div style="font-size: 60px;">Stress</div>
                     <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:white" />
-                    <p style="font-size: 14px;font-weight:500;text-align:justify">Food addicts eat way more than
-                        required for proper nutrition and they continue to binge on things that make them feel good.This
-                        may have a number of negative physical, psychological, and social effects, including
-                        cardiovascular diseases, obesity, lack of self-confidence, depression, and social alienation.
-                        Due to the demand for induced emotions of joy, a food addict frequently resumes these harmful
-                        actions despite unintended consequences. It is critical to seek professional assistance from a
-                        food addiction therapist near me due to the vicious cycle of food addiction and the negative
-                        effects connected with this habit.
-                        <br><br>
-                        You may have gone through a lot of feelings, such as disappointment, frustration, and
-                        helplessness, so if you or a dear one has become trapped in the vicious cycle of an eating
-                        disorder. You might not be able to live the life you once did because of your food addiction,
-                        but a recovery is always an option. You can get the resources you need to effectively deal with
-                        your food addiction by getting the treatment and care you need. Thank goodness, there are
-                        specialized facilities like addiction centers or an addiction therapist nearby that can assist
-                        you in treating food addiction in a holistic and all-encompassing way. Treatment facilities for
-                        food addiction provide multi-specialty care that integrates psychotherapy while concentrating on
-                        and addressing medical problems and dietary issues.
+                    <p style="font-size: 14px;text-align:justify">Undoubtedly about 75% to 90% of all clinical visits
+                        are for illness induced by stress. It is a fact that our persistent thoughts spring forth from
+                        our unconscious mind. These are the thoughts that we find ourselves automatically tangled in, in
+                        our daily life. If the persistent thoughts that keep popping into our conscious level are all
+                        about problems concerning past or present, then we definitely increase our stress and anxiety.
+                        Since different modalities of therapeutical tool can be used to change unconscious thoughts and
+                        take control over the sub-conscious mind the right stress relief therapy can effectively
+                        eliminate negative stress from our system and bring us into a state of deep relaxation.
                     </p>
+                    <div>
+                        <div class="" style="font-weight: 500;font-size: 14px;">2.1 CAUSES OF STRESS</div>
+                        <p style="font-size: 14px;text-align:justify">Life is full of ups and downs, so both positive
+                            and
+                            negative event’s in one’s life can be stressful. However major life changes are the greatest
+                            contributors of stress for most people. No doubt they place the greatest demands on
+                            resources
+                            for coping.</p>
+
+                        <div class="" style="font-weight: 500;font-size: 14px;"> 2.2 SYMPTOMS OF STRESS</div>
+                        <p style="text-align: justify;font-size: 14px;">There are a lot of signs and symptoms that can
+                            be experienced. These sign and symptoms are grouped in four categories – Feelings, Thoughts,
+                            Behavior and Physiology.</p>
+                        <div class="py-3 justify-content-center d-flex">
+                            <div>
+                                <ul class="nav nav-tabs justify-content-center mb-4"
+                                    style="border-bottom: none;font-size: 20px;">
+                                    <li style="font-size: 16px;" class="active text-center px-3">
+                                        <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#Feeling">
+                                            2.2.1 FEELINGS
+                                        </div>
+                                    </li>
+                                    <li class="text-center px-3" style="font-size: 16px;">
+                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#Thoughts">
+                                            2.2.2 THOUGHTS
+                                        </div>
+                                    </li>
+                                    <li class="text-center px-3" style="font-size: 16px;">
+                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#Behavior">
+                                            2.2.3 BEHAVIOR
+                                        </div>
+                                    </li>
+                                    <li class="text-center px-3" style="font-size: 16px;">
+                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#Physiology">
+                                            2.2.4 PHYSIOLOGY
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="Feeling" class="active tab-pane">
+                                        <ul class="" style="font-size: 18px;">
+                                            <li>Feeling angry</li>
+                                            <li>Feeling moody</li>
+                                            <li>Feeling scared</li>
+                                            <li>Feeling irritable</li>
+                                        </ul>
+
+                                    </div>
+                                    <div id="Thoughts" class="tab-pane fade">
+                                        <ul class="" style="font-size: 18px;">
+                                            <li>Embarrassing easily</li>
+                                            <li>Low self esteem</li>
+                                            <li>Fear of failure</li>
+                                            <li>Loss of memory</li>
+                                            <li>Preoccupied with thoughts</li>
+                                            <li>Worrying about the future</li>
+                                            <li>Lack of concentration</li>
+                                        </ul>
+                                    </div>
+                                    <div id="Behavior" class="tab-pane fade">
+                                        <ul class="" style="font-size: 18px;">
+                                            <li>Sturring and other speak difficulties</li>
+                                            <li>Crying with reason</li>
+                                            <li>Acting impulsively</li>
+                                            <li>Starling easily</li>
+                                            <li>Laughing in a high pitch</li>
+                                            <li>Grindling teeth especially at night</li>
+                                            <li>Lack of appetite or overeating</li>
+                                            <li>Increasing use of drug and alcohol</li>
+                                            <li>Increasing smoking</li>
+                                        </ul>
+                                    </div>
+                                    <div id="Physiology" class="tab-pane fade">
+                                        <ul class="" style="font-size: 18px;">
+                                            <li>Sweating in the hands or feet</li>
+                                            <li>Increased heart beat or palpitation, Headaches</li>
+                                            <li>Tremor or shaking</li>
+                                            <li>Nervous ticks</li>
+                                            <li>Dryness of mouth, Premenstrual tension</li>
+                                            <li>Feeling weakness, Muscular pain</li>
+                                            <li>Urinating frequently</li>
+                                            <li>Disturb sleep, Diarrhea, Indigestion or Vomiting</li>
+                                            <li>Butterflies in the stomach, Susceptibility to illness</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="font-weight: 500;font-size: 14px;">2.3 WHAT LEADS YOU TO STRESS</div>
+                        <div class="py-3 justify-content-center d-flex">
+                            <div>
+                                <ul class="nav nav-tabs justify-content-center mb-4"
+                                    style="border-bottom: none;font-size: 20px;">
+                                    <li style="font-size: 16px;" class="active text-center px-3">
+                                        <div class="active py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#majorChanges">
+                                            2.3.1 MAJOR LIFE CHANGES
+                                        </div>
+                                    </li>
+                                    <li class="text-center px-3" style="font-size: 16px;">
+                                        <div class="py-2 tab rounded-0 text-decoration-none" type="button"
+                                            data-bs-toggle="tab" href="#Environmental">
+                                            2.3.2 ENVIRONMENTAL FACTORS
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="majorChanges" class="active tab-pane">
+                                        <ul class="" style="font-size: 18px;">
+                                            <li>Geographic mobility</li>
+                                            <li>Going to college</li>
+                                            <li>Transfer to a new school</li>
+                                            <li>Being fired from the job</li>
+                                            <li>Marriage</li>
+                                            <li>Pregnancy</li>
+                                            <li>New job</li>
+                                            <li>New life style</li>
+                                            <li>Divorce</li>
+                                            <li>Death of a loved one</li>
+                                        </ul>
+
+                                    </div>
+                                    <div id="Environmental" class="tab-pane fade">
+                                        <ul class="" style="font-size: 18px;">
+                                            <li>Disappointment</li>
+                                            <li>Noise</li>
+                                            <li>Financial crises</li>
+                                            <li>Competition</li>
+                                            <li>Time pressure or work overload</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align: justify;font-size: 14px;">Dr. Imran has committed himself to help as many
+                            people as he can to permanently eliminate harmful stress from their daily life and attain
+                            complete peace and serenity calming them down to a point where stress, anxiety and
+                            depression no longer remains in their mind and body.</p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-12 p-lg-5 p-md-5 p-3 align-items-center d-flex"
+                style="background-color: rgba(191, 222, 217, 1);font-size: 20px;color: black;">
+                <div>
+                    <div style="font-size: 60px;">Fear</div>
+                    <hr class="mb-4 m-0" style="height: 2px; width:70px; background-color:black" />
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 gx-0">
+                <img src="../Images/Q-1.jpg" class="img-fluid" style="width: 100%;height:100%;" />
             </div>
         </div>
+
     </section>
 
     <footer>

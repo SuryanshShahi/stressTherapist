@@ -4,6 +4,9 @@ body {
 .btn {
   box-shadow: 1px 1px 2px 0px #80808082 !important;
 }
+li{
+  font-size: 14px;
+}
 /* ----------------------------------NavBar---------------------------------- */
 .nav-item.active{
   border-bottom: 3px solid rgba(153, 195, 189, 1);
