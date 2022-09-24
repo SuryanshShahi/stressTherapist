@@ -7,6 +7,10 @@ body {
 li {
   font-size: 14px;
 }
+.btn-primary1:hover {
+  background-color: #055e5b !important;
+  color: white !important;
+}
 /* ----------------------------------NavBar---------------------------------- */
 .nav-item.active {
   border-bottom: 3px solid rgba(153, 195, 189, 1);
